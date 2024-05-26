@@ -147,7 +147,7 @@ public class frmComecar extends javax.swing.JDialog {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.dispose();
-        frmExpoesicoes frmExp = new frmExpoesicoes(null, true);
+        frmExposicoes frmExp = new frmExposicoes(null, true);
         frmExp.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
