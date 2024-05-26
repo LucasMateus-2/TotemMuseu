@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package totemdados;
-import Apresentacao.frmPrincipal;
+import Apresentacao.frmComecar;
+
 
 /**
  *
@@ -15,8 +16,9 @@ public class TotemDados {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        frmPrincipal frmp = new frmPrincipal(null, true);
-        frmp.setVisible(true);
+        
+        frmComecar frmC = new frmComecar(null, true);
+        frmC.setVisible(true);
 
     }
     

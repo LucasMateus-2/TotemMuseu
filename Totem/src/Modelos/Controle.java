@@ -19,15 +19,18 @@ public class Controle extends AbsPropiedades
     public void Executar() 
     {
         Estaticos.MENSAGEM = "";
-        Validacao validacao = new Validacao(this.nome, this.questão1, this.questão2, this.questão3,
+        AbsPropiedades validacao = new Validacao(this.nome, this.questão1, this.questão2, this.questão3,
         this.questão4, this.questão5);
         
         if(Estaticos.MENSAGEM.equals(""))
         {
-            AdicionaDados adicionaDados = new AdicionaDados(validacao.nome,validacao.questão1,
+            AbsPropiedades adicionaDados = new AdicionaDados(validacao.nome,validacao.questão1,
                     validacao.questão2, validacao.questão3, validacao.questão4, validacao.questão5);
             
-            ContaPontos contaPontos = new ContaPontos(null, null, null, null, null, null);
+            AbsPropiedades contaPontos = new ContaPontos(null, null, null, null, null, null);
+            
+            AnalisaDados analisaDados = new AnalisaDados(nome, questão1, questão2, questão3, questão4, questão5);
+            
         }
     }
 }

@@ -37,13 +37,13 @@ public class Validacao extends AbsPropiedades
         {
             Estaticos.MENSAGEM = "Nome não pode ser nulo";
         }
-        else if (!pessoa.questão1.equals("SIM") && !pessoa.questão1.equals("NAO"))
+        else if (!pessoa.questão1.equals("SIM") && !pessoa.questão1.equals("NÃO"))
         {
-            Estaticos.MENSAGEM = "Digite apenas sim ou não";
+            Estaticos.MENSAGEM = "Questão 1: Digite apenas sim ou não";
         }
-        else if (!pessoa.questão2.equals("SIM") && !pessoa.questão2.equals("NAO"))
+        else if (!pessoa.questão2.equals("SIM") && !pessoa.questão2.equals("NÃO"))
         {
-            Estaticos.MENSAGEM = "Digite apenas sim ou não";
+            Estaticos.MENSAGEM = "Questão 2: Digite apenas sim ou não";
         }
         else if (pessoa.questão1.equals("") || pessoa.questão1 == null ) 
         {
