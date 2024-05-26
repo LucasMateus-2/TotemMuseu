@@ -8,9 +8,6 @@
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="3b" green="40" red="ff" type="rgb"/>
     </Property>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1366, 736]"/>
-    </Property>
     <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1366, 768]"/>
     </Property>
@@ -63,104 +60,70 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="534" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jButton2" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnComecar" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton1" linkSize="1" min="-2" pref="262" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="399" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="534" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btnExposição" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnQuestionário" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnMapa" linkSize="1" min="-2" pref="262" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
                   </Group>
                   <EmptySpace pref="419" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  <Component id="btnDadosAps" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                  <Component id="btnMapa" linkSize="2" min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="jButton1" linkSize="2" min="-2" pref="97" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="btnQuestionário" linkSize="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnComecar" linkSize="2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                  <Component id="btnExposição" linkSize="2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="67" max="32767" attributes="0"/>
-                  <Component id="btnDadosAps" min="-2" pref="85" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="jButton2" linkSize="2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="197" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnMapa">
+        <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/lucasmateus/Imagens/mapaIcon157.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="           MAPA"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMapaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnQuestion&#xe1;rio">
+        <Component class="javax.swing.JButton" name="btnComecar">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/lucasmateus/Imagens/Questin&#xe1;rio127X127.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="QUESTION&#xc1;RIO"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuestion&#xe1;rioActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnComecarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnExposi&#xe7;&#xe3;o">
+        <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/lucasmateus/Imagens/mars127x127.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="    EXPOSI&#xc7;&#xc3;O"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExposi&#xe7;&#xe3;oActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -173,20 +136,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="BEM VINDO AO MUSEU!"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnDadosAps">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="e1" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Inserir Dados para Aps"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDadosApsActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>

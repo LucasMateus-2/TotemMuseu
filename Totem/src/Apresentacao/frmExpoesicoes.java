@@ -1,19 +1,20 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package Apresentacao;
 
 /**
  *
- * @author isaco
+ * @author lucasmateus
  */
-public class frmExposicoes extends javax.swing.JPanel {
+public class frmExpoesicoes extends javax.swing.JDialog {
 
     /**
-     * Creates new form frmExposicoes
+     * Creates new form teste
      */
-    public frmExposicoes() {
+    public frmExpoesicoes(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
     }
 
@@ -39,6 +40,7 @@ public class frmExposicoes extends javax.swing.JPanel {
         jTextArea2 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         pnl3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea3 = new javax.swing.JTextArea();
@@ -46,18 +48,23 @@ public class frmExposicoes extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         pnl4 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea4 = new javax.swing.JTextArea();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         pnl5 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextArea5 = new javax.swing.JTextArea();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         pnl1.setBackground(new java.awt.Color(255, 51, 51));
         pnl1.setForeground(new java.awt.Color(255, 51, 0));
@@ -99,7 +106,7 @@ public class frmExposicoes extends javax.swing.JPanel {
                         .addComponent(jLabel2)
                         .addGap(31, 31, 31)
                         .addComponent(scp2, javax.swing.GroupLayout.PREFERRED_SIZE, 1022, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(642, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         pnl1Layout.setVerticalGroup(
             pnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +119,7 @@ public class frmExposicoes extends javax.swing.JPanel {
                 .addGroup(pnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnProximo1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(477, Short.MAX_VALUE))
+                .addContainerGap(246, Short.MAX_VALUE))
         );
 
         tbpPrincipal.addTab("A colonização de Marte", pnl1);
@@ -138,13 +145,20 @@ public class frmExposicoes extends javax.swing.JPanel {
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jButton6.setText("<");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl2Layout = new javax.swing.GroupLayout(pnl2);
         pnl2.setLayout(pnl2Layout);
         pnl2Layout.setHorizontalGroup(
             pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl2Layout.createSequentialGroup()
-                .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(pnl2Layout.createSequentialGroup()
                         .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnl2Layout.createSequentialGroup()
@@ -154,8 +168,13 @@ public class frmExposicoes extends javax.swing.JPanel {
                                 .addGap(16, 16, 16)
                                 .addComponent(jLabel3)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1043, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(636, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1043, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnl2Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl2Layout.setVerticalGroup(
             pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,9 +186,11 @@ public class frmExposicoes extends javax.swing.JPanel {
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(535, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(310, Short.MAX_VALUE))
         );
 
         tbpPrincipal.addTab("Sojourner", pnl2);
@@ -198,6 +219,14 @@ public class frmExposicoes extends javax.swing.JPanel {
             }
         });
 
+        jButton7.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jButton7.setText("<");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl3Layout = new javax.swing.GroupLayout(pnl3);
         pnl3.setLayout(pnl3Layout);
         pnl3Layout.setHorizontalGroup(
@@ -206,7 +235,9 @@ public class frmExposicoes extends javax.swing.JPanel {
                 .addGroup(pnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,7 +249,7 @@ public class frmExposicoes extends javax.swing.JPanel {
                             .addComponent(jLabel5)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 991, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 698, Short.MAX_VALUE))
+                .addGap(0, 68, Short.MAX_VALUE))
         );
         pnl3Layout.setVerticalGroup(
             pnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,14 +260,16 @@ public class frmExposicoes extends javax.swing.JPanel {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(pnl3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnl3Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
+                        .addGap(3, 3, 3)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnl3Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel7)
-                .addContainerGap(237, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         tbpPrincipal.addTab("Spirit e Opportunity", pnl3);
@@ -262,6 +295,14 @@ public class frmExposicoes extends javax.swing.JPanel {
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jButton8.setText("<");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl4Layout = new javax.swing.GroupLayout(pnl4);
         pnl4.setLayout(pnl4Layout);
         pnl4Layout.setHorizontalGroup(
@@ -271,13 +312,15 @@ public class frmExposicoes extends javax.swing.JPanel {
                 .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(pnl4Layout.createSequentialGroup()
                         .addComponent(jLabel8)
+                        .addGap(49, 49, 49)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnl4Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 1017, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(661, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         pnl4Layout.setVerticalGroup(
             pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -286,11 +329,12 @@ public class frmExposicoes extends javax.swing.JPanel {
                 .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(507, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(259, Short.MAX_VALUE))
         );
 
         tbpPrincipal.addTab("Curiosity", pnl4);
@@ -315,41 +359,56 @@ public class frmExposicoes extends javax.swing.JPanel {
             }
         });
 
+        jButton9.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jButton9.setText("<");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl5Layout = new javax.swing.GroupLayout(pnl5);
         pnl5.setLayout(pnl5Layout);
         pnl5Layout.setHorizontalGroup(
             pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnl5Layout.createSequentialGroup()
+                .addGroup(pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl5Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl5Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10)
                             .addComponent(jLabel11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(685, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         pnl5Layout.setVerticalGroup(
             pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl5Layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addGroup(pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(pnl5Layout.createSequentialGroup()
                         .addComponent(jLabel10)
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(466, Short.MAX_VALUE))
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(62, 62, 62)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnl5Layout.createSequentialGroup()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(310, Short.MAX_VALUE))
         );
 
         tbpPrincipal.addTab("Perseverance", pnl5);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(tbpPrincipal)
@@ -358,11 +417,13 @@ public class frmExposicoes extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(tbpPrincipal)
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnProximo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProximo1ActionPerformed
         tbpPrincipal.setSelectedIndex(1);
-        
+
     }//GEN-LAST:event_btnProximo1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -378,9 +439,70 @@ public class frmExposicoes extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        this.dispose
+        this.dispose();
+        frmComecar frmC = new frmComecar(null, true);
+        frmC.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        tbpPrincipal.setSelectedIndex(0);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        tbpPrincipal.setSelectedIndex(1);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        tbpPrincipal.setSelectedIndex(2);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        
+        tbpPrincipal.setSelectedIndex(3);
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(frmExpoesicoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(frmExpoesicoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(frmExpoesicoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(frmExpoesicoes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the dialog */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                frmExpoesicoes dialog = new frmExpoesicoes(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnProximo1;
@@ -388,6 +510,10 @@ public class frmExposicoes extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -1,6 +1,5 @@
 package Apresentacao;
 
-import Modelos.AdicionaDados;
 import java.awt.event.KeyEvent;
 
 public class frmComecar extends javax.swing.JDialog {
@@ -20,11 +19,10 @@ public class frmComecar extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        btnMapa = new javax.swing.JButton();
-        btnQuestionário = new javax.swing.JButton();
-        btnExposição = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        btnComecar = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnDadosAps = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Bem Vindo a Marte!");
@@ -41,51 +39,42 @@ public class frmComecar extends javax.swing.JDialog {
         jPanel2.setBackground(new java.awt.Color(255, 64, 59));
         jPanel2.setPreferredSize(new java.awt.Dimension(1366, 768));
 
-        btnMapa.setBackground(new java.awt.Color(255, 255, 255));
-        btnMapa.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnMapa.setForeground(new java.awt.Color(0, 0, 0));
-        btnMapa.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mapaIcon157.png")); // NOI18N
-        btnMapa.setText("           MAPA");
-        btnMapa.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mapaIcon157.png")); // NOI18N
+        jButton1.setText("           MAPA");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMapaActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        btnQuestionário.setBackground(new java.awt.Color(255, 255, 255));
-        btnQuestionário.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnQuestionário.setForeground(new java.awt.Color(0, 0, 0));
-        btnQuestionário.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/Questinário127X127.png")); // NOI18N
-        btnQuestionário.setText("QUESTIONÁRIO");
-        btnQuestionário.addActionListener(new java.awt.event.ActionListener() {
+        btnComecar.setBackground(new java.awt.Color(255, 255, 255));
+        btnComecar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnComecar.setForeground(new java.awt.Color(0, 0, 0));
+        btnComecar.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/Questinário127X127.png")); // NOI18N
+        btnComecar.setText("QUESTIONÁRIO");
+        btnComecar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuestionárioActionPerformed(evt);
+                btnComecarActionPerformed(evt);
             }
         });
 
-        btnExposição.setBackground(new java.awt.Color(255, 255, 255));
-        btnExposição.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnExposição.setForeground(new java.awt.Color(0, 0, 0));
-        btnExposição.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mars127x127.png")); // NOI18N
-        btnExposição.setText("    EXPOSIÇÃO");
-        btnExposição.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mars127x127.png")); // NOI18N
+        jButton2.setText("    EXPOSIÇÃO");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExposiçãoActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("BEM VINDO AO MUSEU!");
-
-        btnDadosAps.setBackground(new java.awt.Color(255, 255, 225));
-        btnDadosAps.setForeground(new java.awt.Color(0, 0, 0));
-        btnDadosAps.setText("Inserir Dados para Aps");
-        btnDadosAps.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDadosApsActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -94,22 +83,18 @@ public class frmComecar extends javax.swing.JDialog {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(399, 399, 399)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(534, 534, 534)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnExposição)
-                            .addComponent(btnQuestionário)
-                            .addComponent(btnMapa, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jButton2)
+                            .addComponent(btnComecar)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(399, 399, 399)
+                        .addComponent(jLabel1)))
                 .addContainerGap(419, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnDadosAps)
-                .addGap(25, 25, 25))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnExposição, btnMapa, btnQuestionário});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnComecar, jButton1, jButton2});
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,17 +102,15 @@ public class frmComecar extends javax.swing.JDialog {
                 .addGap(25, 25, 25)
                 .addComponent(jLabel1)
                 .addGap(48, 48, 48)
-                .addComponent(btnMapa, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(btnQuestionário)
+                .addComponent(btnComecar)
                 .addGap(27, 27, 27)
-                .addComponent(btnExposição)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addComponent(btnDadosAps, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45))
+                .addComponent(jButton2)
+                .addContainerGap(197, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnExposição, btnMapa, btnQuestionário});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnComecar, jButton1, jButton2});
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -144,58 +127,29 @@ public class frmComecar extends javax.swing.JDialog {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnQuestionárioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuestionárioActionPerformed
+    private void btnComecarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComecarActionPerformed
         this.dispose();
         frmPrincipal frmP = new frmPrincipal(null, true);
         frmP.setVisible(true);
-    }//GEN-LAST:event_btnQuestionárioActionPerformed
+    }//GEN-LAST:event_btnComecarActionPerformed
 
-    private void btnMapaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMapaActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.dispose();
         frmMapa mapa = new frmMapa(null, true);
         mapa.setVisible(true);
-    }//GEN-LAST:event_btnMapaActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         
         
     }//GEN-LAST:event_formKeyPressed
 
-    private void btnExposiçãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExposiçãoActionPerformed
-       this.dispose();
-       frmExposicoes Expo = new frmExposicoes();
-       Expo.setVisible(true);
-    }//GEN-LAST:event_btnExposiçãoActionPerformed
-
-    private void btnDadosApsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadosApsActionPerformed
-       String Nome ="Alice";
-       String Questao1 ="SIM";
-       String Questao2 ="NAO";
-       String Questao3 ="a";
-       String Questao4 ="b";
-       String Questao5 ="c";
-       AdicionaDados pessoa1= new AdicionaDados(Nome, Questao1, Questao2, Questao3, Questao4, Questao5);
-      
-
-       Nome ="Bob";
-       Questao1 ="NAO";
-       Questao2 ="SIM";
-       Questao3 ="a";
-       Questao4 ="c";
-       Questao5 ="b";
-       
-       AdicionaDados pessoa2= new AdicionaDados(Nome, Questao1, Questao2, Questao3, Questao4, Questao5);
-       
-       Nome ="Carlos";
-       Questao1 ="SIM";
-       Questao2 ="NAO";
-       Questao3 ="a";
-       Questao4 ="b";
-       Questao5 ="c";
-       
-       AdicionaDados pessoa3= new AdicionaDados(Nome, Questao1, Questao2, Questao3, Questao4, Questao5);
-    }//GEN-LAST:event_btnDadosApsActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        this.dispose();
+        frmExpoesicoes frmExp = new frmExpoesicoes(null, true);
+        frmExp.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,10 +194,9 @@ public class frmComecar extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDadosAps;
-    private javax.swing.JButton btnExposição;
-    private javax.swing.JButton btnMapa;
-    private javax.swing.JButton btnQuestionário;
+    private javax.swing.JButton btnComecar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
