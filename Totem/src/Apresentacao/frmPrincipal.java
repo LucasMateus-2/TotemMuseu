@@ -7,6 +7,7 @@ import Modelos.Estaticos;
 import static Modelos.Estaticos.DadosPessoas;
 import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class frmPrincipal extends javax.swing.JDialog 
@@ -134,7 +135,6 @@ public class frmPrincipal extends javax.swing.JDialog
         setBackground(new java.awt.Color(255, 255, 255));
 
         tbpPrincipal.setBackground(new java.awt.Color(255, 255, 255));
-        tbpPrincipal.setForeground(new java.awt.Color(0, 0, 0));
         tbpPrincipal.setToolTipText("");
         tbpPrincipal.setAlignmentX(0.0F);
         tbpPrincipal.setAlignmentY(0.0F);
@@ -149,7 +149,6 @@ public class frmPrincipal extends javax.swing.JDialog
         });
 
         pnlQuestao1.setBackground(new java.awt.Color(255, 255, 255));
-        pnlQuestao1.setForeground(new java.awt.Color(0, 0, 0));
         pnlQuestao1.setName(""); // NOI18N
         pnlQuestao1.setPreferredSize(new java.awt.Dimension(1366, 768));
         pnlQuestao1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -160,8 +159,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lblNome.setText("Digite seu nome:");
         pnlQuestao1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
-        txfNome.setBackground(new java.awt.Color(255, 255, 255));
-        txfNome.setForeground(new java.awt.Color(0, 0, 0));
         txfNome.setText("                                    ");
         txfNome.setSelectionColor(new java.awt.Color(102, 153, 255));
         txfNome.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -176,9 +173,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao1.add(txfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 200, 30));
 
-        btnProximo1.setBackground(new java.awt.Color(255, 255, 255));
         btnProximo1.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        btnProximo1.setForeground(new java.awt.Color(0, 0, 0));
         btnProximo1.setText(">");
         btnProximo1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,7 +187,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao1.setText("Marte é o  quarto planeta do sistema solar a partir do Sol ");
         pnlQuestao1.add(lblQuestao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
-        txfQuestao1.setBackground(new java.awt.Color(255, 255, 255));
         txfQuestao1.setText("                                    ");
         txfQuestao1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -229,9 +223,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao2.setText("O local onde o Perseverance pousou em sua missão foi a Cratera Jezego?");
         pnlQuestao2.add(lblQuestao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 1260, -1));
 
-        txfQuestao2.setBackground(new java.awt.Color(255, 255, 255));
         txfQuestao2.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        txfQuestao2.setForeground(new java.awt.Color(0, 0, 0));
         txfQuestao2.setText("                                   ");
         txfQuestao2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -245,9 +237,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao2.add(txfQuestao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 210, 70));
 
-        btnProximo2.setBackground(new java.awt.Color(255, 255, 255));
         btnProximo2.setFont(new java.awt.Font("DejaVu Sans", 0, 48)); // NOI18N
-        btnProximo2.setForeground(new java.awt.Color(0, 0, 0));
         btnProximo2.setText(">");
         btnProximo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,9 +246,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao2.add(btnProximo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 230, 120, 180));
 
-        btnAnterior1.setBackground(new java.awt.Color(255, 255, 255));
         btnAnterior1.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        btnAnterior1.setForeground(new java.awt.Color(0, 0, 0));
         btnAnterior1.setText("<");
         btnAnterior1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,7 +261,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblRespondaSN2.setText("Responda apenas com sim ou nao!");
         pnlQuestao2.add(lblRespondaSN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, -1, 40));
 
-        lblImagembg2.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagembg2.setText("jLabel3");
         pnlQuestao2.add(lblImagembg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -287,9 +275,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao5.setText("Quais foram os veículos robóticos   lançados a Marte?");
         pnlQuestao3.add(lblQuestao5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
 
-        btn3a.setBackground(new java.awt.Color(255, 255, 255));
         btn3a.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btn3a.setForeground(new java.awt.Color(0, 0, 0));
         btn3a.setText("A");
         btn3a.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -313,9 +299,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl3b.setText(" Opala,LEV-2, Smart,Lunokhod 1 e Yutu");
         pnlQuestao3.add(lbl3b, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 570, -1));
 
-        btn3b.setBackground(new java.awt.Color(255, 255, 255));
         btn3b.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btn3b.setForeground(new java.awt.Color(0, 0, 0));
         btn3b.setText("B");
         btn3b.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -334,9 +318,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl3c.setText("Spirit ,Smart , Perseverance ,LEV-2 e Opportunity");
         pnlQuestao3.add(lbl3c, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, 570, 20));
 
-        btn3c.setBackground(new java.awt.Color(255, 255, 255));
         btn3c.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btn3c.setForeground(new java.awt.Color(0, 0, 0));
         btn3c.setText("C");
         btn3c.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -350,9 +332,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao3.add(btn3c, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, 110, 90));
 
-        btnProximo6.setBackground(new java.awt.Color(255, 255, 255));
         btnProximo6.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
-        btnProximo6.setForeground(new java.awt.Color(0, 0, 0));
         btnProximo6.setText(">");
         btnProximo6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -361,9 +341,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao3.add(btnProximo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 300, 70, 150));
 
-        btnAnterior2.setBackground(new java.awt.Color(255, 255, 255));
         btnAnterior2.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
-        btnAnterior2.setForeground(new java.awt.Color(0, 0, 0));
         btnAnterior2.setText("<");
         btnAnterior2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -372,7 +350,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao3.add(btnAnterior2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 70, 150));
 
-        lblImagemgb3.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagemgb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
         lblImagemgb3.setText("jLabel3");
         pnlQuestao3.add(lblImagemgb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -386,9 +364,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao4.setText("O veículo robótico Sojourner teve seu nome dado em ");
         pnlQuestao4.add(lblQuestao4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
-        btnProximo4.setBackground(new java.awt.Color(255, 255, 255));
         btnProximo4.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
-        btnProximo4.setForeground(new java.awt.Color(0, 0, 0));
         btnProximo4.setText(">");
         btnProximo4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -402,8 +378,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl4c.setText("Selena Gomez");
         pnlQuestao4.add(lbl4c, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, -1, -1));
 
-        btn4c.setBackground(new java.awt.Color(255, 255, 255));
-        btn4c.setForeground(new java.awt.Color(0, 0, 0));
         btn4c.setText("C");
         btn4c.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -422,8 +396,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl4b.setText("Silvester Stallone");
         pnlQuestao4.add(lbl4b, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, -1, -1));
 
-        btn4b.setBackground(new java.awt.Color(255, 255, 255));
-        btn4b.setForeground(new java.awt.Color(0, 0, 0));
         btn4b.setText("B");
         btn4b.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -437,9 +409,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao4.add(btn4b, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 110, 90));
 
-        btn4a.setBackground(new java.awt.Color(255, 255, 255));
         btn4a.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
-        btn4a.setForeground(new java.awt.Color(0, 0, 0));
         btn4a.setText("A");
         btn4a.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -458,9 +428,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl4a.setText("Sojourner Thruth");
         pnlQuestao4.add(lbl4a, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, -1, 50));
 
-        btnAnterior3.setBackground(new java.awt.Color(255, 255, 255));
         btnAnterior3.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
-        btnAnterior3.setForeground(new java.awt.Color(0, 0, 0));
         btnAnterior3.setText("<");
         btnAnterior3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -474,7 +442,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestão4nL.setText("homenagem a qual celebridade?");
         pnlQuestao4.add(lblQuestão4nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
-        lblImagembg4.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
         lblImagembg4.setText("jLabel3");
         pnlQuestao4.add(lblImagembg4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -487,9 +455,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao6.setText("Quais foram os veículos robóticos gêmeos lançados ");
         pnlQuestao5.add(lblQuestao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
 
-        btnContinuar.setBackground(new java.awt.Color(255, 255, 255));
         btnContinuar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnContinuar.setForeground(new java.awt.Color(0, 0, 0));
         btnContinuar.setText("Continuar");
         btnContinuar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -503,8 +469,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl5a.setText("Sprite e Pepsi");
         pnlQuestao5.add(lbl5a, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, -1, 50));
 
-        btn5a.setBackground(new java.awt.Color(255, 255, 255));
-        btn5a.setForeground(new java.awt.Color(0, 0, 0));
         btn5a.setText("A");
         btn5a.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -518,8 +482,6 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao5.add(btn5a, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 110, 90));
 
-        btn5b.setBackground(new java.awt.Color(255, 255, 255));
-        btn5b.setForeground(new java.awt.Color(0, 0, 0));
         btn5b.setText("B");
         btn5b.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -543,8 +505,6 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl5c.setText("Spirit e Opportunity");
         pnlQuestao5.add(lbl5c, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, -1, -1));
 
-        btn5c.setBackground(new java.awt.Color(255, 255, 255));
-        btn5c.setForeground(new java.awt.Color(0, 0, 0));
         btn5c.setText("C");
         btn5c.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -558,9 +518,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao5.add(btn5c, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 110, 90));
 
-        btnAnterior4.setBackground(new java.awt.Color(255, 255, 255));
         btnAnterior4.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
-        btnAnterior4.setForeground(new java.awt.Color(0, 0, 0));
         btnAnterior4.setText("<");
         btnAnterior4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -574,7 +532,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQustão5nL.setText("em missão a marte em 2003?");
         pnlQuestao5.add(lblQustão5nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 81, -1, -1));
 
-        lblImagembg5.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
         lblImagembg5.setText("jLabel3");
         pnlQuestao5.add(lblImagembg5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -582,69 +540,74 @@ public class frmPrincipal extends javax.swing.JDialog
 
         pnlSatifacao.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnNota1.setBackground(new java.awt.Color(255, 255, 255));
         btnNota1.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota1.setForeground(new java.awt.Color(0, 0, 0));
-        btnNota1.setText("1");
+        btnNota1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
+        btnNota1.setBorder(null);
+        btnNota1.setBorderPainted(false);
+        btnNota1.setContentAreaFilled(false);
+        btnNota1.setVerifyInputWhenFocusTarget(false);
         btnNota1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNota1ActionPerformed(evt);
             }
         });
-        pnlSatifacao.add(btnNota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 202, 102, 95));
+        pnlSatifacao.add(btnNota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 90, 100));
 
-        btnNota2.setBackground(new java.awt.Color(255, 255, 255));
         btnNota2.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota2.setForeground(new java.awt.Color(0, 0, 0));
-        btnNota2.setText("2");
+        btnNota2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
+        btnNota2.setBorder(null);
+        btnNota2.setBorderPainted(false);
+        btnNota2.setContentAreaFilled(false);
         btnNota2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNota2ActionPerformed(evt);
             }
         });
-        pnlSatifacao.add(btnNota2, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 202, 102, 95));
+        pnlSatifacao.add(btnNota2, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 197, 130, 100));
 
-        btnNota3.setBackground(new java.awt.Color(255, 255, 255));
         btnNota3.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota3.setForeground(new java.awt.Color(0, 0, 0));
-        btnNota3.setText("3");
+        btnNota3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
+        btnNota3.setBorder(null);
+        btnNota3.setBorderPainted(false);
+        btnNota3.setContentAreaFilled(false);
         btnNota3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNota3ActionPerformed(evt);
             }
         });
-        pnlSatifacao.add(btnNota3, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 202, 102, 95));
+        pnlSatifacao.add(btnNota3, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 197, 102, 100));
 
-        btnNota4.setBackground(new java.awt.Color(255, 255, 255));
         btnNota4.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota4.setForeground(new java.awt.Color(0, 0, 0));
-        btnNota4.setText("4");
+        btnNota4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
+        btnNota4.setBorder(null);
+        btnNota4.setBorderPainted(false);
+        btnNota4.setContentAreaFilled(false);
         btnNota4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNota4ActionPerformed(evt);
             }
         });
-        pnlSatifacao.add(btnNota4, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 202, 102, 95));
+        pnlSatifacao.add(btnNota4, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 207, 102, 90));
 
         btnNota5.setBackground(new java.awt.Color(255, 255, 225));
         btnNota5.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota5.setForeground(new java.awt.Color(0, 0, 0));
-        btnNota5.setText("5");
+        btnNota5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
+        btnNota5.setBorder(null);
+        btnNota5.setBorderPainted(false);
+        btnNota5.setContentAreaFilled(false);
         btnNota5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNota5ActionPerformed(evt);
             }
         });
-        pnlSatifacao.add(btnNota5, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 202, 102, 95));
+        pnlSatifacao.add(btnNota5, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 207, 102, 90));
 
         lblPerguntaNota.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         lblPerguntaNota.setForeground(new java.awt.Color(255, 255, 255));
         lblPerguntaNota.setText("Que nota você daria para a Exposição e para o questionário ? ");
         pnlSatifacao.add(lblPerguntaNota, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 75, 1326, -1));
 
-        btnFinalizar.setBackground(new java.awt.Color(255, 255, 255));
         btnFinalizar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnFinalizar.setForeground(new java.awt.Color(0, 0, 0));
         btnFinalizar.setText("Finalizar");
         btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -653,7 +616,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlSatifacao.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 470, 150, 80));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         jLabel10.setText("jLabel3");
         pnlSatifacao.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -681,9 +644,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblNomeParabens.setText("Nome");
         pnlResultado.add(lblNomeParabens, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, -1, -1));
 
-        btnVoltar.setBackground(new java.awt.Color(255, 255, 255));
         btnVoltar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnVoltar.setForeground(new java.awt.Color(0, 0, 0));
         btnVoltar.setText("Voltar para o inicio");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -695,85 +656,66 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlMostrarResultados.setBackground(new java.awt.Color(255, 255, 255));
         pnlMostrarResultados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblNomeVis.setForeground(new java.awt.Color(0, 0, 0));
         lblNomeVis.setText("Nome");
         pnlMostrarResultados.add(lblNomeVis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 48, 48, -1));
 
-        lblQ1Vis.setForeground(new java.awt.Color(0, 0, 0));
         lblQ1Vis.setText("Questão 1");
         pnlMostrarResultados.add(lblQ1Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 83, -1, -1));
 
-        lblQ2Vis.setForeground(new java.awt.Color(0, 0, 0));
         lblQ2Vis.setText("Questão 2");
         pnlMostrarResultados.add(lblQ2Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 114, 83, -1));
 
-        lblQ3Vis.setForeground(new java.awt.Color(0, 0, 0));
         lblQ3Vis.setText("Questão 3");
         pnlMostrarResultados.add(lblQ3Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 139, -1, -1));
 
-        lblQ4Vis.setForeground(new java.awt.Color(0, 0, 0));
         lblQ4Vis.setText("Questão 4");
         pnlMostrarResultados.add(lblQ4Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 170, -1, -1));
 
-        lblResNome.setForeground(new java.awt.Color(0, 0, 0));
         lblResNome.setText("jLabel15");
         pnlMostrarResultados.add(lblResNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 48, -1, -1));
 
-        lblResQ1.setForeground(new java.awt.Color(0, 0, 0));
         lblResQ1.setText("jLabel16");
         pnlMostrarResultados.add(lblResQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 83, -1, -1));
 
-        lblResQ2.setForeground(new java.awt.Color(0, 0, 0));
         lblResQ2.setText("jLabel17");
         pnlMostrarResultados.add(lblResQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 114, -1, -1));
 
-        lblResQ3.setForeground(new java.awt.Color(0, 0, 0));
         lblResQ3.setText("jLabel18");
         pnlMostrarResultados.add(lblResQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 139, -1, -1));
 
-        lblResQ4.setForeground(new java.awt.Color(0, 0, 0));
         lblResQ4.setText("jLabel19");
         pnlMostrarResultados.add(lblResQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 170, -1, -1));
 
-        lblResQ5.setForeground(new java.awt.Color(0, 0, 0));
         lblResQ5.setText("jLabel19");
         pnlMostrarResultados.add(lblResQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 195, -1, -1));
 
-        lblQ5Vis.setForeground(new java.awt.Color(0, 0, 0));
         lblQ5Vis.setText("Questão 5");
         pnlMostrarResultados.add(lblQ5Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 195, -1, -1));
 
         lblValorVisitante.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblValorVisitante.setForeground(new java.awt.Color(0, 0, 0));
         lblValorVisitante.setText("%");
-        pnlMostrarResultados.add(lblValorVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 104, 97));
+        pnlMostrarResultados.add(lblValorVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 104, 97));
 
         lblPorcentagem.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblPorcentagem.setForeground(new java.awt.Color(0, 0, 0));
         lblPorcentagem.setText("%");
         pnlMostrarResultados.add(lblPorcentagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 170, -1, -1));
 
         lblMensagemPorcentagem.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblMensagemPorcentagem.setForeground(new java.awt.Color(0, 0, 0));
         lblMensagemPorcentagem.setText("Dos visitantes tiveram a mesma pontuação que você");
         pnlMostrarResultados.add(lblMensagemPorcentagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 40));
 
         lblVisitante.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblVisitante.setForeground(new java.awt.Color(0, 0, 0));
         lblVisitante.setText("Visitante");
         pnlMostrarResultados.add(lblVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 17, 149, -1));
 
         lblValorVisitante0.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblValorVisitante0.setForeground(new java.awt.Color(0, 0, 0));
         lblValorVisitante0.setText("X");
-        pnlMostrarResultados.add(lblValorVisitante0, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 104, 97));
+        pnlMostrarResultados.add(lblValorVisitante0, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 190, 97));
 
-        lblNotaLabel.setForeground(new java.awt.Color(0, 0, 0));
         lblNotaLabel.setText("Sua nota para nós");
         pnlMostrarResultados.add(lblNotaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, -1, -1));
 
         lblNota.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblNota.setForeground(new java.awt.Color(0, 0, 0));
         lblNota.setText("X");
         pnlMostrarResultados.add(lblNota, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 100, 80));
 
@@ -784,7 +726,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblParabens2.setText("Parabens2");
         pnlResultado.add(lblParabens2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 470, -1));
 
-        lblImagembgResultado.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembgResultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
         lblImagembgResultado.setText("jLabel3");
         pnlResultado.add(lblImagembgResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -910,7 +852,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnAnterior4ActionPerformed
 
     private void btn5cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5cActionPerformed
-        Estaticos.Questão5 = "a";
+        Estaticos.Questão5 = "c";
         resQuestão5 = Estaticos.Questão5;
         btn5c.setBackground(Color.GRAY);
         btn5b.setBackground(Color.WHITE);
@@ -968,7 +910,7 @@ public class frmPrincipal extends javax.swing.JDialog
             {
                 pontos ="";
                 pontos = Visitante.get(6);
-                porcentagem = Visitante.get(7);
+                porcentagem = Estaticos.PORCENTAGEM;
                 lblResNome.setText(Visitante.get(0));
                 lblResQ1.setText(Visitante.get(1));
                 lblResQ2.setText(Visitante.get(2));
@@ -1022,7 +964,6 @@ public class frmPrincipal extends javax.swing.JDialog
                 lblNomeParabens.setText(txfNome.getText());
                 lblParabens2.setText("Você precisa aprender mais sobre marte");
             }
-            
             
             lblPontos.setText(pontos);
             lblValorVisitante0.setText(porcentagem);
@@ -1087,67 +1028,76 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnProximo4ActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
-
+        
         this.dispose();
         frmComecar frmC = new frmComecar(null, true);
         frmC.setVisible(true);
     }//GEN-LAST:event_btnVoltarActionPerformed
 
-    private void btnNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota1ActionPerformed
-         
-        Avaliacao = "1";
-        btnNota1.setBackground(Color.GRAY);     
-        btnNota2.setBackground(Color.WHITE);
-        btnNota3.setBackground(Color.WHITE);
-        btnNota4.setBackground(Color.WHITE);
-        btnNota5.setBackground(Color.WHITE);
-        
-    }//GEN-LAST:event_btnNota1ActionPerformed
-
     private void btnNota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota2ActionPerformed
-
+        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        btnNota1.setIcon(icon);
+         btnNota2.setIcon(icon);
+          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+         btnNota3.setIcon(icone);
+         btnNota4.setIcon(icone);
+         btnNota5.setIcon(icone);
         Avaliacao = "2";
-        btnNota1.setBackground(Color.GRAY);
-        btnNota2.setBackground(Color.GRAY);
-        btnNota3.setBackground(Color.WHITE);
-        btnNota4.setBackground(Color.WHITE);
-        btnNota5.setBackground(Color.WHITE);
+        
     }//GEN-LAST:event_btnNota2ActionPerformed
 
     private void btnNota3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota3ActionPerformed
-       
+       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+       btnNota1.setIcon(icon);
+       btnNota2.setIcon(icon);
+        btnNota3.setIcon(icon);
         Avaliacao = "3";
-        btnNota1.setBackground(Color.GRAY);
-        btnNota2.setBackground(Color.GRAY);
-        btnNota3.setBackground(Color.GRAY);
-        btnNota4.setBackground(Color.WHITE);
-        btnNota5.setBackground(Color.WHITE);
+          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+         btnNota4.setIcon(icone);
+         btnNota5.setIcon(icone);
     }//GEN-LAST:event_btnNota3ActionPerformed
 
     private void btnNota4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota4ActionPerformed
+           ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        btnNota1.setIcon(icon);
+        btnNota2.setIcon(icon);
+        btnNota3.setIcon(icon);
+        btnNota4.setIcon(icon);
+        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+         btnNota5.setIcon(icone);
         Avaliacao = "4";
-        btnNota1.setBackground(Color.GRAY);
-        btnNota2.setBackground(Color.GRAY);
-        btnNota3.setBackground(Color.GRAY);
-        btnNota4.setBackground(Color.GRAY);                
-        btnNota5.setBackground(Color.WHITE);
+      
 
     }//GEN-LAST:event_btnNota4ActionPerformed
 
     private void btnNota5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota5ActionPerformed
-       
+       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        btnNota1.setIcon(icon);
+         btnNota2.setIcon(icon);
+          btnNota3.setIcon(icon);
+           btnNota4.setIcon(icon);
+            btnNota5.setIcon(icon);
         Avaliacao = "5";
-        btnNota1.setBackground(Color.GRAY);
-        btnNota2.setBackground(Color.GRAY);
-        btnNota3.setBackground(Color.GRAY);
-        btnNota4.setBackground(Color.GRAY);
-        btnNota5.setBackground(Color.GRAY);
+       
     }//GEN-LAST:event_btnNota5ActionPerformed
 
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
         lblNota.setText(Avaliacao);
         tbpPrincipal.setSelectedIndex(6);
     }//GEN-LAST:event_btnFinalizarActionPerformed
+
+    private void btnNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota1ActionPerformed
+        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        btnNota1.setIcon(icon);
+        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+         btnNota2.setIcon(icone);
+          btnNota3.setIcon(icone);
+           btnNota4.setIcon(icone);
+            btnNota5.setIcon(icone);
+        Avaliacao = "1";
+       
+
+    }//GEN-LAST:event_btnNota1ActionPerformed
 
     /**
      * @param args the command line arguments
