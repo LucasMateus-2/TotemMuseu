@@ -865,7 +865,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn5cMouseClicked
 
     private void btn5bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5bActionPerformed
-        Estaticos.Questão4 = "b";
+        Estaticos.Questão5 = "b";
         resQuestão5 = Estaticos.Questão5;
         btn5b.setBackground(Color.GRAY);
         btn5a.setBackground(Color.WHITE);
@@ -896,7 +896,7 @@ public class frmPrincipal extends javax.swing.JDialog
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
 
         Estaticos.MENSAGEM ="";
-
+        Integer IntPontos =0;
         resQuestão3= Estaticos.Questão3;
         resQuestão4= Estaticos.Questão4;
         resQuestão5= Estaticos.Questão5;
@@ -905,10 +905,10 @@ public class frmPrincipal extends javax.swing.JDialog
             txfQuestao2.getText().toUpperCase(),resQuestão3,resQuestão4, resQuestão5);
              String pontos ="";
              String porcentagem="";
-        
+            
+            //Verifica as repostas  de cada visitante feitas no questionário 
             for(ArrayList<String> Visitante  : Estaticos.DadosPessoas)
             {
-                pontos ="";
                 pontos = Visitante.get(6);
                 porcentagem = Estaticos.PORCENTAGEM;
                 lblResNome.setText(Visitante.get(0));
@@ -947,10 +947,12 @@ public class frmPrincipal extends javax.swing.JDialog
                     } else {
                         lblResQ5.setForeground(Color.RED);
                     }
+                IntPontos=0;
             }
+            
         if(Estaticos.MENSAGEM.equals(""))
         {
-            Integer IntPontos =Integer.valueOf(pontos);
+            IntPontos= Integer.valueOf(pontos);
             if(IntPontos >=3 )
             {
                 lblParabens.setText("Parabens ");
@@ -1028,17 +1030,17 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnProximo4ActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
-        
+
         this.dispose();
         frmComecar frmC = new frmComecar(null, true);
         frmC.setVisible(true);
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     private void btnNota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota2ActionPerformed
-        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
         btnNota1.setIcon(icon);
          btnNota2.setIcon(icon);
-          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
          btnNota3.setIcon(icone);
          btnNota4.setIcon(icone);
          btnNota5.setIcon(icone);
@@ -1047,23 +1049,23 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnNota2ActionPerformed
 
     private void btnNota3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota3ActionPerformed
-       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
        btnNota1.setIcon(icon);
        btnNota2.setIcon(icon);
         btnNota3.setIcon(icon);
         Avaliacao = "3";
-          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
          btnNota4.setIcon(icone);
          btnNota5.setIcon(icone);
     }//GEN-LAST:event_btnNota3ActionPerformed
 
     private void btnNota4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota4ActionPerformed
-           ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+           ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
         btnNota1.setIcon(icon);
         btnNota2.setIcon(icon);
         btnNota3.setIcon(icon);
         btnNota4.setIcon(icon);
-        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
          btnNota5.setIcon(icone);
         Avaliacao = "4";
       
@@ -1071,7 +1073,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnNota4ActionPerformed
 
     private void btnNota5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota5ActionPerformed
-       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
         btnNota1.setIcon(icon);
          btnNota2.setIcon(icon);
           btnNota3.setIcon(icon);
@@ -1087,9 +1089,9 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void btnNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota1ActionPerformed
-        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.PNG");
+        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
         btnNota1.setIcon(icon);
-        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.PNG");
+        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
          btnNota2.setIcon(icone);
           btnNota3.setIcon(icone);
            btnNota4.setIcon(icone);

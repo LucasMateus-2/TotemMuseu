@@ -28,7 +28,6 @@ public class frmComecar extends javax.swing.JDialog {
         setTitle("Bem Vindo a Marte!");
         setAlwaysOnTop(true);
         setBackground(new java.awt.Color(255, 64, 59));
-        setPreferredSize(new java.awt.Dimension(1366, 736));
         setSize(new java.awt.Dimension(1366, 768));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -39,21 +38,15 @@ public class frmComecar extends javax.swing.JDialog {
         jPanel2.setBackground(new java.awt.Color(255, 64, 59));
         jPanel2.setPreferredSize(new java.awt.Dimension(1366, 768));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mapaIcon157.png")); // NOI18N
-        jButton1.setText("           MAPA");
+        jButton1.setText("MAPA");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        btnComecar.setBackground(new java.awt.Color(255, 255, 255));
         btnComecar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnComecar.setForeground(new java.awt.Color(0, 0, 0));
-        btnComecar.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/Questinário127X127.png")); // NOI18N
         btnComecar.setText("QUESTIONÁRIO");
         btnComecar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,10 +54,7 @@ public class frmComecar extends javax.swing.JDialog {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/mars127x127.png")); // NOI18N
         jButton2.setText("    EXPOSIÇÃO");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

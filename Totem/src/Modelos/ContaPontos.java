@@ -27,11 +27,11 @@ public class ContaPontos extends AbsPropiedades
         Estaticos.REPOSTAS.add("a");
         Estaticos.REPOSTAS.add("a");
         Estaticos.REPOSTAS.add("c"); 
-        Integer pontos= 0;
+       
        
         for ( ArrayList<String> Visitante : Estaticos.DadosPessoas) 
         {
-             
+            Integer pontos= 0;
             for (int j = 1; j <= 5; j++) 
             {
             if (Visitante.get(j).equals(Estaticos.REPOSTAS.get(j-1))) 
