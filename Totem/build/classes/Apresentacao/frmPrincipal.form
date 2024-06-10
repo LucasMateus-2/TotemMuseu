@@ -361,7 +361,7 @@
             <Component class="javax.swing.JLabel" name="lblImagembg2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -569,7 +569,7 @@
             <Component class="javax.swing.JLabel" name="lblImagemgb3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -787,7 +787,7 @@
             <Component class="javax.swing.JLabel" name="lblImagembg4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -999,7 +999,7 @@
             <Component class="javax.swing.JLabel" name="lblImagembg5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -1175,7 +1175,7 @@
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
@@ -1588,7 +1588,7 @@
             <Component class="javax.swing.JLabel" name="lblImagembgResultado">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="/home/lucasmateus/Imagens/MarsBackGround.jpg"/>
+                  <Image iconType="3" name="/Imagens/MarsBackGround.jpg"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>

@@ -273,7 +273,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblRespondaSN2.setText("Responda apenas com sim ou nao!");
         pnlQuestao2.add(lblRespondaSN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, -1, 40));
 
-        lblImagembg2.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagembg2.setText("jLabel3");
         pnlQuestao2.add(lblImagembg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -372,7 +372,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlQuestao3.add(btnAnterior2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 70, 150));
 
-        lblImagemgb3.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagemgb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagemgb3.setText("jLabel3");
         pnlQuestao3.add(lblImagemgb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -474,7 +474,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestão4nL.setText("homenagem a qual celebridade?");
         pnlQuestao4.add(lblQuestão4nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
-        lblImagembg4.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagembg4.setText("jLabel3");
         pnlQuestao4.add(lblImagembg4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -574,7 +574,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQustão5nL.setText("em missão a marte em 2003?");
         pnlQuestao5.add(lblQustão5nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 81, -1, -1));
 
-        lblImagembg5.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagembg5.setText("jLabel3");
         pnlQuestao5.add(lblImagembg5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -653,7 +653,7 @@ public class frmPrincipal extends javax.swing.JDialog
         });
         pnlSatifacao.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 470, 150, 80));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         jLabel10.setText("jLabel3");
         pnlSatifacao.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -784,7 +784,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblParabens2.setText("Parabens2");
         pnlResultado.add(lblParabens2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 470, -1));
 
-        lblImagembgResultado.setIcon(new javax.swing.ImageIcon("/home/lucasmateus/Imagens/MarsBackGround.jpg")); // NOI18N
+        lblImagembgResultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
         lblImagembgResultado.setText("jLabel3");
         pnlResultado.add(lblImagembgResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
@@ -968,7 +968,7 @@ public class frmPrincipal extends javax.swing.JDialog
             {
                 pontos ="";
                 pontos = Visitante.get(6);
-                porcentagem = Visitante.get(7);
+                porcentagem = Estaticos.PORCENTAGEM;
                 lblResNome.setText(Visitante.get(0));
                 lblResQ1.setText(Visitante.get(1));
                 lblResQ2.setText(Visitante.get(2));

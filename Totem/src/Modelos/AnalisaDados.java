@@ -38,7 +38,6 @@ public class AnalisaDados extends AbsPropiedades
                     if (count > maxContagem) 
                     {
                         maxContagem = count;
-
                     }
 
                 double porcentagem = ((double) maxContagem / Estaticos.DadosPessoas.size()) * 100;
