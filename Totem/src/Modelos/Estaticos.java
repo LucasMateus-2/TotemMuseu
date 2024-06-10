@@ -17,6 +17,7 @@ public class Estaticos
     public static String MENSAGEM;
     public static String TEXTO;
     public static String PORCENTAGEM;
+    public static String PONTOS;
     public static String MAIORESPONTOS;
     public static String MENORESPONTOS;
     public static String Questão3;

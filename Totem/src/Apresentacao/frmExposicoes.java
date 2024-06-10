@@ -71,6 +71,7 @@ public class frmExposicoes extends javax.swing.JDialog {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imagem1300x300.png"))); // NOI18N
 
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
@@ -128,6 +129,7 @@ public class frmExposicoes extends javax.swing.JDialog {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Imagem2300x300.png"))); // NOI18N
 
+        jTextArea2.setEditable(false);
         jTextArea2.setColumns(20);
         jTextArea2.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         jTextArea2.setRows(5);
@@ -197,6 +199,7 @@ public class frmExposicoes extends javax.swing.JDialog {
 
         pnl3.setBackground(new java.awt.Color(255, 55, 51));
 
+        jTextArea3.setEditable(false);
         jTextArea3.setColumns(20);
         jTextArea3.setFont(new java.awt.Font("Helvetica", 0, 16)); // NOI18N
         jTextArea3.setRows(5);
@@ -276,6 +279,7 @@ public class frmExposicoes extends javax.swing.JDialog {
 
         pnl4.setBackground(new java.awt.Color(255, 55, 51));
 
+        jTextArea4.setEditable(false);
         jTextArea4.setColumns(20);
         jTextArea4.setFont(new java.awt.Font("Helvetica", 0, 16)); // NOI18N
         jTextArea4.setRows(5);
@@ -330,10 +334,11 @@ public class frmExposicoes extends javax.swing.JDialog {
                     .addComponent(jLabel9)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
-                .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pnl4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(259, Short.MAX_VALUE))
         );
 
@@ -341,6 +346,7 @@ public class frmExposicoes extends javax.swing.JDialog {
 
         pnl5.setBackground(new java.awt.Color(255, 55, 51));
 
+        jTextArea5.setEditable(false);
         jTextArea5.setColumns(20);
         jTextArea5.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         jTextArea5.setRows(5);
