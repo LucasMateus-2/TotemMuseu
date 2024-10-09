@@ -1,4 +1,3 @@
-
 package Apresentacao;
 
 import Modelos.AnalisaDados;
@@ -7,24 +6,24 @@ import Modelos.Estaticos;
 import static Modelos.Estaticos.DadosPessoas;
 import java.awt.Color;
 import java.util.ArrayList;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-public class frmPrincipal extends javax.swing.JDialog 
-{ 
-    String resQuestão3="";
-    String resQuestão4="";
-    String resQuestão5="";
-    String Avaliacao="";
+public class frmPrincipal extends javax.swing.JDialog
+{
+
+    String resQuestão3 = "";
+    String resQuestão4 = "";
+    String resQuestão5 = "";
+
     /**
      * Creates new form frmPrincipal
      */
     public frmPrincipal(java.awt.Frame parent, boolean modal)
     {
         super(parent, modal);
-        Estaticos.Questão3="";
-        Estaticos.Questão4="";
-        Estaticos.Questão5="";
+        Estaticos.Questão3 = "";
+        Estaticos.Questão4 = "";
+        Estaticos.Questão5 = "";
         initComponents();
     }
 
@@ -35,7 +34,8 @@ public class frmPrincipal extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         btgQuestao4 = new javax.swing.ButtonGroup();
         btgQuestao5 = new javax.swing.ButtonGroup();
@@ -49,14 +49,14 @@ public class frmPrincipal extends javax.swing.JDialog
         txfQuestao1 = new javax.swing.JTextField();
         lblQuestão1nL = new javax.swing.JLabel();
         lblRespondaSN = new javax.swing.JLabel();
-        lblImagembg1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         pnlQuestao2 = new javax.swing.JPanel();
         lblQuestao2 = new javax.swing.JLabel();
         txfQuestao2 = new javax.swing.JTextField();
         btnProximo2 = new javax.swing.JButton();
         btnAnterior1 = new javax.swing.JButton();
         lblRespondaSN2 = new javax.swing.JLabel();
-        lblImagembg2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         pnlQuestao3 = new javax.swing.JPanel();
         lblQuestao5 = new javax.swing.JLabel();
         btn3a = new javax.swing.JButton();
@@ -67,7 +67,7 @@ public class frmPrincipal extends javax.swing.JDialog
         btn3c = new javax.swing.JButton();
         btnProximo6 = new javax.swing.JButton();
         btnAnterior2 = new javax.swing.JButton();
-        lblImagemgb3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         pnlQuestao4 = new javax.swing.JPanel();
         lblQuestao4 = new javax.swing.JLabel();
         btnProximo4 = new javax.swing.JButton();
@@ -79,10 +79,10 @@ public class frmPrincipal extends javax.swing.JDialog
         lbl4a = new javax.swing.JLabel();
         btnAnterior3 = new javax.swing.JButton();
         lblQuestão4nL = new javax.swing.JLabel();
-        lblImagembg4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         pnlQuestao5 = new javax.swing.JPanel();
         lblQuestao6 = new javax.swing.JLabel();
-        btnContinuar = new javax.swing.JButton();
+        btnFinalizar = new javax.swing.JButton();
         lbl5a = new javax.swing.JLabel();
         btn5a = new javax.swing.JButton();
         btn5b = new javax.swing.JButton();
@@ -91,23 +91,14 @@ public class frmPrincipal extends javax.swing.JDialog
         btn5c = new javax.swing.JButton();
         btnAnterior4 = new javax.swing.JButton();
         lblQustão5nL = new javax.swing.JLabel();
-        lblImagembg5 = new javax.swing.JLabel();
-        pnlSatifacao = new javax.swing.JPanel();
-        btnNota1 = new javax.swing.JButton();
-        btnNota2 = new javax.swing.JButton();
-        btnNota3 = new javax.swing.JButton();
-        btnNota4 = new javax.swing.JButton();
-        btnNota5 = new javax.swing.JButton();
-        lblPerguntaNota = new javax.swing.JLabel();
-        btnFinalizar = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         pnlResultado = new javax.swing.JPanel();
         lblPontos = new javax.swing.JLabel();
         lblParabens = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblNomeParabens = new javax.swing.JLabel();
-        btnVoltar = new javax.swing.JButton();
-        pnlMostrarResultados = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         lblNomeVis = new javax.swing.JLabel();
         lblQ1Vis = new javax.swing.JLabel();
         lblQ2Vis = new javax.swing.JLabel();
@@ -122,17 +113,13 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQ5Vis = new javax.swing.JLabel();
         lblValorVisitante = new javax.swing.JLabel();
         lblPorcentagem = new javax.swing.JLabel();
-        lblMensagemPorcentagem = new javax.swing.JLabel();
-        lblVisitante = new javax.swing.JLabel();
-        lblValorVisitante0 = new javax.swing.JLabel();
-        lblNotaLabel = new javax.swing.JLabel();
-        lblNota = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         lblParabens2 = new javax.swing.JLabel();
-        lblImagembgResultado = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Questionario");
-        setBackground(new java.awt.Color(255, 255, 255));
 
         tbpPrincipal.setBackground(new java.awt.Color(255, 255, 255));
         tbpPrincipal.setToolTipText("");
@@ -142,8 +129,10 @@ public class frmPrincipal extends javax.swing.JDialog
         tbpPrincipal.setFont(new java.awt.Font("Helvetica", 0, 15)); // NOI18N
         tbpPrincipal.setPreferredSize(new java.awt.Dimension(1366, 768));
         tbpPrincipal.setRequestFocusEnabled(false);
-        tbpPrincipal.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+        tbpPrincipal.addPropertyChangeListener(new java.beans.PropertyChangeListener()
+        {
+            public void propertyChange(java.beans.PropertyChangeEvent evt)
+            {
                 tbpPrincipalPropertyChange(evt);
             }
         });
@@ -161,22 +150,28 @@ public class frmPrincipal extends javax.swing.JDialog
 
         txfNome.setText("                                    ");
         txfNome.setSelectionColor(new java.awt.Color(102, 153, 255));
-        txfNome.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        txfNome.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 txfNomeMouseClicked(evt);
             }
         });
-        txfNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        txfNome.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 txfNomeActionPerformed(evt);
             }
         });
         pnlQuestao1.add(txfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 200, 30));
 
-        btnProximo1.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        btnProximo1.setText(">");
-        btnProximo1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnProximo1.setBackground(new java.awt.Color(54, 255, 131));
+        btnProximo1.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
+        btnProximo1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnProximo1ActionPerformed(evt);
             }
         });
@@ -188,13 +183,17 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao1.add(lblQuestao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
         txfQuestao1.setText("                                    ");
-        txfQuestao1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        txfQuestao1.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 txfQuestao1MouseClicked(evt);
             }
         });
-        txfQuestao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        txfQuestao1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 txfQuestao1ActionPerformed(evt);
             }
         });
@@ -210,28 +209,32 @@ public class frmPrincipal extends javax.swing.JDialog
         lblRespondaSN.setText("Responda apenas com sim ou nao!");
         pnlQuestao1.add(lblRespondaSN, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, -1, -1));
 
-        lblImagembg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-        lblImagembg1.setText("jLabel3");
-        pnlQuestao1.add(lblImagembg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -40, 1890, 1040));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        pnlQuestao1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, -40, 1890, 1040));
 
         tbpPrincipal.addTab("Questão 1", pnlQuestao1);
 
         pnlQuestao2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblQuestao2.setFont(new java.awt.Font("Helvetica", 0, 36)); // NOI18N
+        lblQuestao2.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         lblQuestao2.setForeground(new java.awt.Color(255, 255, 255));
-        lblQuestao2.setText("O local onde o Perseverance pousou em sua missão foi a Cratera Jezego?");
-        pnlQuestao2.add(lblQuestao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 1260, -1));
+        lblQuestao2.setText("Aqui vai o enunciado da questão 2");
+        pnlQuestao2.add(lblQuestao2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 840, -1));
 
         txfQuestao2.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         txfQuestao2.setText("                                   ");
-        txfQuestao2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        txfQuestao2.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 txfQuestao2MouseClicked(evt);
             }
         });
-        txfQuestao2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        txfQuestao2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 txfQuestao2ActionPerformed(evt);
             }
         });
@@ -239,8 +242,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnProximo2.setFont(new java.awt.Font("DejaVu Sans", 0, 48)); // NOI18N
         btnProximo2.setText(">");
-        btnProximo2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnProximo2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnProximo2ActionPerformed(evt);
             }
         });
@@ -248,8 +253,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnAnterior1.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         btnAnterior1.setText("<");
-        btnAnterior1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnAnterior1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnAnterior1ActionPerformed(evt);
             }
         });
@@ -261,9 +268,9 @@ public class frmPrincipal extends javax.swing.JDialog
         lblRespondaSN2.setText("Responda apenas com sim ou nao!");
         pnlQuestao2.add(lblRespondaSN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, -1, 40));
 
-        lblImagembg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-        lblImagembg2.setText("jLabel3");
-        pnlQuestao2.add(lblImagembg2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel4.setText("jLabel3");
+        pnlQuestao2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
         tbpPrincipal.addTab("Questão 2", pnlQuestao2);
 
@@ -277,13 +284,17 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn3a.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
         btn3a.setText("A");
-        btn3a.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn3a.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn3aMouseClicked(evt);
             }
         });
-        btn3a.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn3a.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn3aActionPerformed(evt);
             }
         });
@@ -301,13 +312,17 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn3b.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
         btn3b.setText("B");
-        btn3b.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn3b.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn3bMouseClicked(evt);
             }
         });
-        btn3b.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn3b.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn3bActionPerformed(evt);
             }
         });
@@ -320,13 +335,17 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn3c.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
         btn3c.setText("C");
-        btn3c.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn3c.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn3cMouseClicked(evt);
             }
         });
-        btn3c.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn3c.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn3cActionPerformed(evt);
             }
         });
@@ -334,8 +353,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnProximo6.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
         btnProximo6.setText(">");
-        btnProximo6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnProximo6.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnProximo6ActionPerformed(evt);
             }
         });
@@ -343,20 +364,18 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnAnterior2.setFont(new java.awt.Font("DejaVu Sans", 0, 24)); // NOI18N
         btnAnterior2.setText("<");
-        btnAnterior2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnAnterior2.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnAnterior2ActionPerformed(evt);
             }
         });
         pnlQuestao3.add(btnAnterior2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 70, 150));
 
-<<<<<<< HEAD
-        lblImagemgb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-=======
-        lblImagemgb3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
->>>>>>> be60bf7fdc91e63b035b9902d62459ddcf83ff50
-        lblImagemgb3.setText("jLabel3");
-        pnlQuestao3.add(lblImagemgb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel5.setText("jLabel3");
+        pnlQuestao3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
         tbpPrincipal.addTab("Questão 3", pnlQuestao3);
 
@@ -370,8 +389,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnProximo4.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
         btnProximo4.setText(">");
-        btnProximo4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnProximo4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnProximo4ActionPerformed(evt);
             }
         });
@@ -383,13 +404,17 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao4.add(lbl4c, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 430, -1, -1));
 
         btn4c.setText("C");
-        btn4c.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn4c.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn4cMouseClicked(evt);
             }
         });
-        btn4c.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn4c.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn4cActionPerformed(evt);
             }
         });
@@ -401,13 +426,17 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao4.add(lbl4b, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, -1, -1));
 
         btn4b.setText("B");
-        btn4b.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn4b.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn4bMouseClicked(evt);
             }
         });
-        btn4b.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn4b.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn4bActionPerformed(evt);
             }
         });
@@ -415,13 +444,17 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn4a.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         btn4a.setText("A");
-        btn4a.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn4a.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn4aMouseClicked(evt);
             }
         });
-        btn4a.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn4a.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn4aActionPerformed(evt);
             }
         });
@@ -434,8 +467,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnAnterior3.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
         btnAnterior3.setText("<");
-        btnAnterior3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnAnterior3.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnAnterior3ActionPerformed(evt);
             }
         });
@@ -446,13 +481,9 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestão4nL.setText("homenagem a qual celebridade?");
         pnlQuestao4.add(lblQuestão4nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
-<<<<<<< HEAD
-        lblImagembg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-=======
-        lblImagembg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
->>>>>>> be60bf7fdc91e63b035b9902d62459ddcf83ff50
-        lblImagembg4.setText("jLabel3");
-        pnlQuestao4.add(lblImagembg4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel6.setText("jLabel3");
+        pnlQuestao4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
         tbpPrincipal.addTab("Questão 4", pnlQuestao4);
 
@@ -463,14 +494,16 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao6.setText("Quais foram os veículos robóticos gêmeos lançados ");
         pnlQuestao5.add(lblQuestao6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, -1));
 
-        btnContinuar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnContinuar.setText("Continuar");
-        btnContinuar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnContinuarActionPerformed(evt);
+        btnFinalizar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        btnFinalizar.setText("Finalizar");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                btnFinalizarActionPerformed(evt);
             }
         });
-        pnlQuestao5.add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 400, 150, 80));
+        pnlQuestao5.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 400, 150, 80));
 
         lbl5a.setFont(new java.awt.Font("DejaVu Sans", 0, 15)); // NOI18N
         lbl5a.setForeground(new java.awt.Color(255, 255, 255));
@@ -478,26 +511,34 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao5.add(lbl5a, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, -1, 50));
 
         btn5a.setText("A");
-        btn5a.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn5a.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn5aMouseClicked(evt);
             }
         });
-        btn5a.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn5a.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn5aActionPerformed(evt);
             }
         });
         pnlQuestao5.add(btn5a, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 110, 90));
 
         btn5b.setText("B");
-        btn5b.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn5b.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn5bMouseClicked(evt);
             }
         });
-        btn5b.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn5b.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn5bActionPerformed(evt);
             }
         });
@@ -514,13 +555,17 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao5.add(lbl5c, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, -1, -1));
 
         btn5c.setText("C");
-        btn5c.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btn5c.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btn5cMouseClicked(evt);
             }
         });
-        btn5c.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btn5c.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btn5cActionPerformed(evt);
             }
         });
@@ -528,8 +573,10 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btnAnterior4.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
         btnAnterior4.setText("<");
-        btnAnterior4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnAnterior4.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnAnterior4ActionPerformed(evt);
             }
         });
@@ -540,99 +587,11 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQustão5nL.setText("em missão a marte em 2003?");
         pnlQuestao5.add(lblQustão5nL, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 81, -1, -1));
 
-<<<<<<< HEAD
-        lblImagembg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-=======
-        lblImagembg5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
->>>>>>> be60bf7fdc91e63b035b9902d62459ddcf83ff50
-        lblImagembg5.setText("jLabel3");
-        pnlQuestao5.add(lblImagembg5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel7.setText("jLabel3");
+        pnlQuestao5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
 
         tbpPrincipal.addTab("Questão5", pnlQuestao5);
-
-        pnlSatifacao.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnNota1.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
-        btnNota1.setBorder(null);
-        btnNota1.setBorderPainted(false);
-        btnNota1.setContentAreaFilled(false);
-        btnNota1.setVerifyInputWhenFocusTarget(false);
-        btnNota1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNota1ActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnNota1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 90, 100));
-
-        btnNota2.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
-        btnNota2.setBorder(null);
-        btnNota2.setBorderPainted(false);
-        btnNota2.setContentAreaFilled(false);
-        btnNota2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNota2ActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnNota2, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 197, 130, 100));
-
-        btnNota3.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
-        btnNota3.setBorder(null);
-        btnNota3.setBorderPainted(false);
-        btnNota3.setContentAreaFilled(false);
-        btnNota3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNota3ActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnNota3, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 197, 102, 100));
-
-        btnNota4.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
-        btnNota4.setBorder(null);
-        btnNota4.setBorderPainted(false);
-        btnNota4.setContentAreaFilled(false);
-        btnNota4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNota4ActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnNota4, new org.netbeans.lib.awtextra.AbsoluteConstraints(514, 207, 102, 90));
-
-        btnNota5.setBackground(new java.awt.Color(255, 255, 225));
-        btnNota5.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
-        btnNota5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarteCinza.png"))); // NOI18N
-        btnNota5.setBorder(null);
-        btnNota5.setBorderPainted(false);
-        btnNota5.setContentAreaFilled(false);
-        btnNota5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNota5ActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnNota5, new org.netbeans.lib.awtextra.AbsoluteConstraints(664, 207, 102, 90));
-
-        lblPerguntaNota.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblPerguntaNota.setForeground(new java.awt.Color(255, 255, 255));
-        lblPerguntaNota.setText("Que nota você daria para a Exposição e para o questionário ? ");
-        pnlSatifacao.add(lblPerguntaNota, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 75, 1326, -1));
-
-        btnFinalizar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnFinalizar.setText("Finalizar");
-        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFinalizarActionPerformed(evt);
-            }
-        });
-        pnlSatifacao.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 470, 150, 80));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-        jLabel10.setText("jLabel3");
-        pnlSatifacao.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
-
-        tbpPrincipal.addTab("Satisfação", pnlSatifacao);
 
         pnlResultado.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -656,95 +615,142 @@ public class frmPrincipal extends javax.swing.JDialog
         lblNomeParabens.setText("Nome");
         pnlResultado.add(lblNomeParabens, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 150, -1, -1));
 
-        btnVoltar.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        btnVoltar.setText("Voltar para o inicio");
-        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVoltarActionPerformed(evt);
+        jButton1.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jButton1.setText("Voltar para o inicio");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
             }
         });
-        pnlResultado.add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 200, 140));
+        pnlResultado.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 200, 140));
 
-        pnlMostrarResultados.setBackground(new java.awt.Color(255, 255, 255));
-        pnlMostrarResultados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         lblNomeVis.setText("Nome");
-        pnlMostrarResultados.add(lblNomeVis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 48, 48, -1));
 
         lblQ1Vis.setText("Questão 1");
-        pnlMostrarResultados.add(lblQ1Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 83, -1, -1));
 
         lblQ2Vis.setText("Questão 2");
-        pnlMostrarResultados.add(lblQ2Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 114, 83, -1));
 
         lblQ3Vis.setText("Questão 3");
-        pnlMostrarResultados.add(lblQ3Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 139, -1, -1));
 
         lblQ4Vis.setText("Questão 4");
-        pnlMostrarResultados.add(lblQ4Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 170, -1, -1));
 
         lblResNome.setText("jLabel15");
-        pnlMostrarResultados.add(lblResNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 48, -1, -1));
 
         lblResQ1.setText("jLabel16");
-        pnlMostrarResultados.add(lblResQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 83, -1, -1));
 
         lblResQ2.setText("jLabel17");
-        pnlMostrarResultados.add(lblResQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 114, -1, -1));
 
         lblResQ3.setText("jLabel18");
-        pnlMostrarResultados.add(lblResQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 139, -1, -1));
 
         lblResQ4.setText("jLabel19");
-        pnlMostrarResultados.add(lblResQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 170, -1, -1));
 
         lblResQ5.setText("jLabel19");
-        pnlMostrarResultados.add(lblResQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 195, -1, -1));
 
         lblQ5Vis.setText("Questão 5");
-        pnlMostrarResultados.add(lblQ5Vis, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 195, -1, -1));
 
         lblValorVisitante.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblValorVisitante.setText("%");
-        pnlMostrarResultados.add(lblValorVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 104, 97));
+        lblValorVisitante.setText("X");
 
         lblPorcentagem.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         lblPorcentagem.setText("%");
-        pnlMostrarResultados.add(lblPorcentagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 170, -1, -1));
 
-        lblMensagemPorcentagem.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblMensagemPorcentagem.setText("Dos visitantes tiveram a mesma pontuação que você");
-        pnlMostrarResultados.add(lblMensagemPorcentagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 40));
+        jLabel8.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jLabel8.setText("Sua pontuação em relaçao aos outros");
 
-        lblVisitante.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblVisitante.setText("Visitante");
-        pnlMostrarResultados.add(lblVisitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 17, 149, -1));
+        jLabel2.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
+        jLabel2.setText("Visitante");
 
-        lblValorVisitante0.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
-        lblValorVisitante0.setText("X");
-        pnlMostrarResultados.add(lblValorVisitante0, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 190, 97));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(lblQ5Vis)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblResQ5))
+                            .addComponent(lblQ4Vis)
+                            .addComponent(lblQ3Vis)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblNomeVis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGap(39, 39, 39)
+                                    .addComponent(lblResNome))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblQ2Vis, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(lblQ1Vis))
+                                    .addGap(3, 3, 3)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(lblResQ2)
+                                        .addComponent(lblResQ1)
+                                        .addComponent(lblResQ3)
+                                        .addComponent(lblResQ4))))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblValorVisitante, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblPorcentagem, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNomeVis)
+                    .addComponent(lblResNome))
+                .addGap(16, 16, 16)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ1Vis)
+                    .addComponent(lblResQ1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ2Vis)
+                    .addComponent(lblResQ2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ3Vis)
+                    .addComponent(lblResQ3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ4Vis)
+                    .addComponent(lblResQ4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ5Vis)
+                    .addComponent(lblResQ5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblValorVisitante, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(lblPorcentagem, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
 
-        lblNotaLabel.setText("Sua nota para nós");
-        pnlMostrarResultados.add(lblNotaLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, -1, -1));
-
-        lblNota.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
-        lblNota.setText("X");
-        pnlMostrarResultados.add(lblNota, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 100, 80));
-
-        pnlResultado.add(pnlMostrarResultados, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, 510, 370));
+        pnlResultado.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, 510, 370));
 
         lblParabens2.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         lblParabens2.setForeground(new java.awt.Color(255, 255, 255));
         lblParabens2.setText("Parabens2");
         pnlResultado.add(lblParabens2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 210, 470, -1));
 
-<<<<<<< HEAD
-        lblImagembgResultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
-=======
-        lblImagembgResultado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround_1.jpg"))); // NOI18N
->>>>>>> be60bf7fdc91e63b035b9902d62459ddcf83ff50
-        lblImagembgResultado.setText("jLabel3");
-        pnlResultado.add(lblImagembgResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1890, 1040));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/MarsBackGround.jpg"))); // NOI18N
+        jLabel9.setText("jLabel3");
+        pnlResultado.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1890, 1040));
 
         tbpPrincipal.addTab("Resultados", pnlResultado);
 
@@ -754,11 +760,12 @@ public class frmPrincipal extends javax.swing.JDialog
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tbpPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 1344, Short.MAX_VALUE))
+                .addComponent(tbpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tbpPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 821, Short.MAX_VALUE)
+            .addComponent(tbpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -786,7 +793,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn3cActionPerformed
 
     private void btn3cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3cMouseClicked
-       
+
     }//GEN-LAST:event_btn3cMouseClicked
 
     private void btn3bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3bActionPerformed
@@ -798,8 +805,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn3bActionPerformed
 
     private void btn3bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3bMouseClicked
-        
-        
+
     }//GEN-LAST:event_btn3bMouseClicked
 
     private void btn3aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3aActionPerformed
@@ -811,8 +817,7 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn3aActionPerformed
 
     private void btn3aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3aMouseClicked
-       
-     
+
     }//GEN-LAST:event_btn3aMouseClicked
 
     private void btnAnterior1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnterior1ActionPerformed
@@ -830,8 +835,9 @@ public class frmPrincipal extends javax.swing.JDialog
 
     private void txfQuestao2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfQuestao2MouseClicked
         Estaticos.TEXTO = txfQuestao2.getText();
-        frmTecladoSimNao  teclado= new frmTecladoSimNao(null, true);
-        teclado.setVisible(true);
+        frmTecladoSimNao teclaSN;
+        teclaSN = new frmTecladoSimNao(null, true);
+        teclaSN.setVisible(true);
         txfQuestao2.setText(Estaticos.TEXTO);
     }//GEN-LAST:event_txfQuestao2MouseClicked
 
@@ -841,8 +847,8 @@ public class frmPrincipal extends javax.swing.JDialog
 
     private void txfQuestao1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfQuestao1MouseClicked
         Estaticos.TEXTO = txfQuestao1.getText();
-        frmTecladoSimNao teclado = new frmTecladoSimNao(null, true);
-        teclado.setVisible(true);
+        frmTecladoSimNao teclaSN = new frmTecladoSimNao(null, true);
+        teclaSN.setVisible(true);
         txfQuestao1.setText(Estaticos.TEXTO);
     }//GEN-LAST:event_txfQuestao1MouseClicked
 
@@ -868,176 +874,134 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnAnterior4ActionPerformed
 
     private void btn5cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5cActionPerformed
-        Estaticos.Questão5 = "c";
-        resQuestão5 = Estaticos.Questão5;
-        btn5c.setBackground(Color.GRAY);
-        btn5b.setBackground(Color.WHITE);
-        btn5a.setBackground(Color.WHITE);
+        Estaticos.Questão5 = "a";
+        resQuestão4 = Estaticos.Questão4;
+        btn4a.setBackground(Color.GREEN);
+        btn4b.setBackground(Color.WHITE);
+        btn4c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn5cActionPerformed
 
     private void btn5cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5cMouseClicked
-        
-        
+
     }//GEN-LAST:event_btn5cMouseClicked
 
     private void btn5bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5bActionPerformed
-        Estaticos.Questão5 = "b";
-        resQuestão5 = Estaticos.Questão5;
-        btn5b.setBackground(Color.GRAY);
-        btn5a.setBackground(Color.WHITE);
-        btn5c.setBackground(Color.WHITE);
-        
+        Estaticos.Questão4 = "a";
+        resQuestão4 = Estaticos.Questão4;
+        btn4a.setBackground(Color.GREEN);
+        btn4b.setBackground(Color.WHITE);
+        btn4c.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btn5bActionPerformed
 
     private void btn5bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5bMouseClicked
-        
-     
+
     }//GEN-LAST:event_btn5bMouseClicked
 
     private void btn5aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5aActionPerformed
-        Estaticos.Questão5 = "a";
-        resQuestão5 = Estaticos.Questão5;
-        btn5a.setBackground(Color.GRAY);
-        btn5b.setBackground(Color.WHITE);
-        btn5c.setBackground(Color.WHITE);
-        
+        Estaticos.Questão4 = "a";
+        resQuestão4 = Estaticos.Questão4;
+        btn4a.setBackground(Color.GREEN);
+        btn4b.setBackground(Color.WHITE);
+        btn4c.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btn5aActionPerformed
 
     private void btn5aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5aMouseClicked
-       
-       
 
     }//GEN-LAST:event_btn5aMouseClicked
 
-    private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
 
-        Estaticos.MENSAGEM ="";
-        Integer IntPontos =0;
-        resQuestão3= Estaticos.Questão3;
-        resQuestão4= Estaticos.Questão4;
-        resQuestão5= Estaticos.Questão5;
+        Estaticos.MENSAGEM = "";
+
+        resQuestão3 = Estaticos.Questão3;
+        resQuestão4 = Estaticos.Questão4;
+        resQuestão5 = Estaticos.Questão5;
 
         Controle controle = new Controle(txfNome.getText(), txfQuestao1.getText().toUpperCase(),
-            txfQuestao2.getText().toUpperCase(),resQuestão3,resQuestão4, resQuestão5);
-             String pontos ="";
-             String porcentagem="";
-            
-            //Verifica as repostas  de cada visitante feitas no questionário 
-            for(ArrayList<String> Visitante  : Estaticos.DadosPessoas)
-            {
-                pontos = Visitante.get(6);
-                porcentagem = Estaticos.PORCENTAGEM;
-                lblResNome.setText(Visitante.get(0));
-                lblResQ1.setText(Visitante.get(1));
-                lblResQ2.setText(Visitante.get(2));
-                lblResQ3.setText(Visitante.get(3));
-                lblResQ4.setText(Visitante.get(4));
-                lblResQ5.setText(Visitante.get(5));
-                
-                   if ( Visitante.get(1).equals(Estaticos.REPOSTAS.get(0))) {
-                        lblResQ1.setForeground(Color.GREEN);
-                    } else {
-                        lblResQ1.setForeground(Color.RED);
-                    }
+                txfQuestao2.getText().toUpperCase(), resQuestão3, resQuestão4, resQuestão5);
 
-                    if (Visitante.get(2).equals(Estaticos.REPOSTAS.get(1))) {
-                        lblResQ2.setForeground(Color.GREEN);
-                    } else {
-                        lblResQ2.setForeground(Color.RED);
-                    }
-
-                    if (Visitante.get(3).equals(Estaticos.REPOSTAS.get(2))) {
-                        lblResQ3.setForeground(Color.GREEN);
-                    } else {
-                        lblResQ3.setForeground(Color.RED);
-                    }
-
-                    if (Visitante.get(4).equals(Estaticos.REPOSTAS.get(3))) {
-                        lblResQ4.setForeground(Color.GREEN);
-                    } else {
-                        lblResQ4.setForeground(Color.RED);
-                    }
-
-                    if (Visitante.get(5).equals(Estaticos.REPOSTAS.get(4))) {
-                        lblResQ5.setForeground(Color.GREEN);
-                    } else {
-                        lblResQ5.setForeground(Color.RED);
-                    }
-                IntPontos=0;
-            }
-            
-        if(Estaticos.MENSAGEM.equals(""))
+        if (Estaticos.MENSAGEM.equals(""))
         {
-            IntPontos= Integer.valueOf(pontos);
-            if(IntPontos >=3 )
+            String pontos = "";
+            for (ArrayList<String> Visitante : Estaticos.DadosPessoas)
+            {
+                AnalisaDados analisadados = new AnalisaDados(null, null, null, null, null, null);
+                pontos = Visitante.get(6);
+                lblNomeVis.setText(Visitante.get(0));
+                lblQ1Vis.setText(Visitante.get(1));
+                lblQ2Vis.setText(Visitante.get(2));
+                lblQ3Vis.setText(Visitante.get(3));
+                lblQ4Vis.setText(Visitante.get(4));
+                lblQ5Vis.setText(Visitante.get(5));
+
+            }
+
+            Integer IntPontos = Integer.valueOf(pontos);
+            if (IntPontos >= 3)
             {
                 lblParabens.setText("Parabens ");
                 lblNomeParabens.setText(txfNome.getText());
                 lblParabens2.setText("você conhece bem sobre a as expedições de marte");
 
-            }
-            else
+            } else
             {
                 lblParabens.setText("Sinto Muito");
                 lblNomeParabens.setText(txfNome.getText());
                 lblParabens2.setText("Você precisa aprender mais sobre marte");
             }
-            
-            lblPontos.setText(pontos);
-            lblValorVisitante0.setText(porcentagem);
+
             tbpPrincipal.setSelectedIndex(5);
-            
-            
-            
-        }
-        else
+
+        } else
         {
             JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
         }
-        
-    }//GEN-LAST:event_btnContinuarActionPerformed
+
+    }//GEN-LAST:event_btnFinalizarActionPerformed
 
     private void btnAnterior3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnterior3ActionPerformed
         tbpPrincipal.setSelectedIndex(2);
     }//GEN-LAST:event_btnAnterior3ActionPerformed
 
     private void btn4aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4aActionPerformed
-       Estaticos.Questão4 = "a";
-        resQuestão4 = Estaticos.Questão4;
-        btn4a.setBackground(Color.GRAY);
-        btn4b.setBackground(Color.WHITE);
-        btn4c.setBackground(Color.WHITE);
+        // TODO add your handling code here:
     }//GEN-LAST:event_btn4aActionPerformed
 
     private void btn4aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4aMouseClicked
-        
-      
+        Estaticos.Questão4 = "a";
+        resQuestão4 = Estaticos.Questão4;
+        btn4a.setBackground(Color.GREEN);
+        btn4b.setBackground(Color.WHITE);
+        btn4c.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btn4aMouseClicked
 
     private void btn4bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4bActionPerformed
-        Estaticos.Questão4 = "b";
-        resQuestão4 = Estaticos.Questão4;
-        btn4b.setBackground(Color.GRAY);
-        btn4a.setBackground(Color.WHITE);
-        btn4c.setBackground(Color.WHITE);
+        // TODO add your handling code here:
     }//GEN-LAST:event_btn4bActionPerformed
 
     private void btn4bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4bMouseClicked
-        
-      
+        Estaticos.Questão4 = "b";
+        resQuestão4 = Estaticos.Questão4;
+        btn4b.setBackground(Color.GREEN);
+        btn4a.setBackground(Color.WHITE);
+        btn4c.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btn4bMouseClicked
 
     private void btn4cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4cActionPerformed
-        Estaticos.Questão4 = "c";
-        resQuestão4 = Estaticos.Questão4;
-        btn4c.setBackground(Color.GRAY);
-        btn4a.setBackground(Color.WHITE);
-        btn4b.setBackground(Color.WHITE);
+        // TODO add your handling code here:
     }//GEN-LAST:event_btn4cActionPerformed
 
     private void btn4cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4cMouseClicked
-        
-      
+        Estaticos.Questão4 = "c";
+        resQuestão4 = Estaticos.Questão4;
+        btn4c.setBackground(Color.GREEN);
+        btn4a.setBackground(Color.WHITE);
+        btn4b.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btn4cMouseClicked
 
     private void btnProximo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProximo4ActionPerformed
@@ -1045,77 +1009,12 @@ public class frmPrincipal extends javax.swing.JDialog
         tbpPrincipal.setSelectedIndex(4);
     }//GEN-LAST:event_btnProximo4ActionPerformed
 
-    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         this.dispose();
         frmComecar frmC = new frmComecar(null, true);
         frmC.setVisible(true);
-    }//GEN-LAST:event_btnVoltarActionPerformed
-
-    private void btnNota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota2ActionPerformed
-        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
-        btnNota1.setIcon(icon);
-         btnNota2.setIcon(icon);
-          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
-         btnNota3.setIcon(icone);
-         btnNota4.setIcon(icone);
-         btnNota5.setIcon(icone);
-        Avaliacao = "2";
-        
-    }//GEN-LAST:event_btnNota2ActionPerformed
-
-    private void btnNota3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota3ActionPerformed
-       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
-       btnNota1.setIcon(icon);
-       btnNota2.setIcon(icon);
-        btnNota3.setIcon(icon);
-        Avaliacao = "3";
-          ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
-         btnNota4.setIcon(icone);
-         btnNota5.setIcon(icone);
-    }//GEN-LAST:event_btnNota3ActionPerformed
-
-    private void btnNota4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota4ActionPerformed
-           ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
-        btnNota1.setIcon(icon);
-        btnNota2.setIcon(icon);
-        btnNota3.setIcon(icon);
-        btnNota4.setIcon(icon);
-        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
-         btnNota5.setIcon(icone);
-        Avaliacao = "4";
-      
-
-    }//GEN-LAST:event_btnNota4ActionPerformed
-
-    private void btnNota5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota5ActionPerformed
-       ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
-        btnNota1.setIcon(icon);
-         btnNota2.setIcon(icon);
-          btnNota3.setIcon(icon);
-           btnNota4.setIcon(icon);
-            btnNota5.setIcon(icon);
-        Avaliacao = "5";
-       
-    }//GEN-LAST:event_btnNota5ActionPerformed
-
-    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
-        lblNota.setText(Avaliacao);
-        tbpPrincipal.setSelectedIndex(6);
-    }//GEN-LAST:event_btnFinalizarActionPerformed
-
-    private void btnNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNota1ActionPerformed
-        ImageIcon icon = new ImageIcon("src/Imagens/MarteEstrela.png");
-        btnNota1.setIcon(icon);
-        ImageIcon icone = new ImageIcon("src/Imagens/MarteCinza.png");
-         btnNota2.setIcon(icone);
-          btnNota3.setIcon(icone);
-           btnNota4.setIcon(icone);
-            btnNota5.setIcon(icone);
-        Avaliacao = "1";
-       
-
-    }//GEN-LAST:event_btnNota1ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1125,7 +1024,7 @@ public class frmPrincipal extends javax.swing.JDialog
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try
         {
@@ -1188,21 +1087,23 @@ public class frmPrincipal extends javax.swing.JDialog
     private javax.swing.JButton btnAnterior2;
     private javax.swing.JButton btnAnterior3;
     private javax.swing.JButton btnAnterior4;
-    private javax.swing.JButton btnContinuar;
     private javax.swing.JButton btnFinalizar;
-    private javax.swing.JButton btnNota1;
-    private javax.swing.JButton btnNota2;
-    private javax.swing.JButton btnNota3;
-    private javax.swing.JButton btnNota4;
-    private javax.swing.JButton btnNota5;
     private javax.swing.JButton btnProximo1;
     private javax.swing.JButton btnProximo2;
     private javax.swing.JButton btnProximo4;
     private javax.swing.JButton btnProximo6;
-    private javax.swing.JButton btnVoltar;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbl3a;
     private javax.swing.JLabel lbl3b;
     private javax.swing.JLabel lbl3c;
@@ -1212,21 +1113,11 @@ public class frmPrincipal extends javax.swing.JDialog
     private javax.swing.JLabel lbl5a;
     private javax.swing.JLabel lbl5b;
     private javax.swing.JLabel lbl5c;
-    private javax.swing.JLabel lblImagembg1;
-    private javax.swing.JLabel lblImagembg2;
-    private javax.swing.JLabel lblImagembg4;
-    private javax.swing.JLabel lblImagembg5;
-    private javax.swing.JLabel lblImagembgResultado;
-    private javax.swing.JLabel lblImagemgb3;
-    private javax.swing.JLabel lblMensagemPorcentagem;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblNomeParabens;
     private javax.swing.JLabel lblNomeVis;
-    private javax.swing.JLabel lblNota;
-    private javax.swing.JLabel lblNotaLabel;
     private javax.swing.JLabel lblParabens;
     private javax.swing.JLabel lblParabens2;
-    private javax.swing.JLabel lblPerguntaNota;
     private javax.swing.JLabel lblPontos;
     private javax.swing.JLabel lblPorcentagem;
     private javax.swing.JLabel lblQ1Vis;
@@ -1251,16 +1142,12 @@ public class frmPrincipal extends javax.swing.JDialog
     private javax.swing.JLabel lblRespondaSN;
     private javax.swing.JLabel lblRespondaSN2;
     private javax.swing.JLabel lblValorVisitante;
-    private javax.swing.JLabel lblValorVisitante0;
-    private javax.swing.JLabel lblVisitante;
-    private javax.swing.JPanel pnlMostrarResultados;
     private javax.swing.JPanel pnlQuestao1;
     private javax.swing.JPanel pnlQuestao2;
     private javax.swing.JPanel pnlQuestao3;
     private javax.swing.JPanel pnlQuestao4;
     private javax.swing.JPanel pnlQuestao5;
     private javax.swing.JPanel pnlResultado;
-    private javax.swing.JPanel pnlSatifacao;
     private javax.swing.JTabbedPane tbpPrincipal;
     private javax.swing.JTextField txfNome;
     private javax.swing.JTextField txfQuestao1;
