@@ -2,8 +2,11 @@ package Apresentacao;
 
 import Modelos.AnalisaDados;
 import Modelos.Controle;
+import Modelos.ControleNovo;
 import Modelos.Estaticos;
 import static Modelos.Estaticos.DadosPessoas;
+import Modelos.EstaticosNovo;
+import Modelos.UsuariosNovo;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -164,7 +167,7 @@ public class frmPrincipal extends javax.swing.JDialog
                 txfNomeActionPerformed(evt);
             }
         });
-        pnlQuestao1.add(txfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 200, 30));
+        pnlQuestao1.add(txfNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 40, 200, 30));
 
         btnProximo1.setBackground(new java.awt.Color(54, 255, 131));
         btnProximo1.setFont(new java.awt.Font("DejaVu Sans", 0, 18)); // NOI18N
@@ -180,7 +183,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblQuestao1.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         lblQuestao1.setForeground(new java.awt.Color(255, 255, 255));
         lblQuestao1.setText("Marte é o  quarto planeta do sistema solar a partir do Sol ");
-        pnlQuestao1.add(lblQuestao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
+        pnlQuestao1.add(lblQuestao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
 
         txfQuestao1.setText("                                    ");
         txfQuestao1.addMouseListener(new java.awt.event.MouseAdapter()
@@ -284,13 +287,6 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn3a.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
         btn3a.setText("A");
-        btn3a.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
-                btn3aMouseClicked(evt);
-            }
-        });
         btn3a.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -311,14 +307,8 @@ public class frmPrincipal extends javax.swing.JDialog
         pnlQuestao3.add(lbl3b, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 570, -1));
 
         btn3b.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
+
         btn3b.setText("B");
-        btn3b.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
-                btn3bMouseClicked(evt);
-            }
-        });
         btn3b.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -335,13 +325,6 @@ public class frmPrincipal extends javax.swing.JDialog
 
         btn3c.setFont(new java.awt.Font("Helvetica", 0, 24)); // NOI18N
         btn3c.setText("C");
-        btn3c.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
-                btn3cMouseClicked(evt);
-            }
-        });
         btn3c.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -598,7 +581,7 @@ public class frmPrincipal extends javax.swing.JDialog
         lblPontos.setFont(new java.awt.Font("Helvetica", 0, 48)); // NOI18N
         lblPontos.setForeground(new java.awt.Color(255, 255, 255));
         lblPontos.setText("X");
-        pnlResultado.add(lblPontos, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, -1, 52));
+        pnlResultado.add(lblPontos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 90, -1, 52));
 
         lblParabens.setFont(new java.awt.Font("Helvetica", 0, 18)); // NOI18N
         lblParabens.setForeground(new java.awt.Color(255, 255, 255));
@@ -785,40 +768,28 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnProximo6ActionPerformed
 
     private void btn3cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3cActionPerformed
-        Estaticos.Questão3 = "c";
-        resQuestão3 = Estaticos.Questão3;
-        btn3a.setBackground(Color.GRAY);
+        EstaticosNovo.respostasUsuarioTemporario.set(3, "c");
+        resQuestão3 = EstaticosNovo.respostasUsuarioTemporario.get(2);
+        btn3c.setBackground(Color.GRAY);
         btn3b.setBackground(Color.WHITE);
-        btn3c.setBackground(Color.WHITE);
+        btn3a.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn3cActionPerformed
 
-    private void btn3cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3cMouseClicked
-
-    }//GEN-LAST:event_btn3cMouseClicked
-
     private void btn3bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3bActionPerformed
-        Estaticos.Questão3 = "b";
-        resQuestão3 = Estaticos.Questão3;
+        EstaticosNovo.respostasUsuarioTemporario.set(3, "b");
+        resQuestão3 = EstaticosNovo.respostasUsuarioTemporario.get(2);
         btn3b.setBackground(Color.GRAY);
-        btn3c.setBackground(Color.WHITE);
         btn3a.setBackground(Color.WHITE);
+        btn3c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn3bActionPerformed
 
-    private void btn3bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3bMouseClicked
-
-    }//GEN-LAST:event_btn3bMouseClicked
-
     private void btn3aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3aActionPerformed
-        Estaticos.Questão3 = "a";
-        resQuestão3 = Estaticos.Questão3;
+        EstaticosNovo.respostasUsuarioTemporario.set(3, "a");
+        resQuestão3 = EstaticosNovo.respostasUsuarioTemporario.get(3);
         btn3a.setBackground(Color.GRAY);
         btn3b.setBackground(Color.WHITE);
         btn3c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn3aActionPerformed
-
-    private void btn3aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn3aMouseClicked
-
-    }//GEN-LAST:event_btn3aMouseClicked
 
     private void btnAnterior1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnterior1ActionPerformed
         tbpPrincipal.setSelectedIndex(0);
@@ -834,11 +805,10 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_txfQuestao2ActionPerformed
 
     private void txfQuestao2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfQuestao2MouseClicked
-        Estaticos.TEXTO = txfQuestao2.getText();
-        frmTecladoSimNao teclaSN;
-        teclaSN = new frmTecladoSimNao(null, true);
+        frmTecladoSimNao teclaSN = new frmTecladoSimNao(null, true);
         teclaSN.setVisible(true);
-        txfQuestao2.setText(Estaticos.TEXTO);
+        EstaticosNovo.respostasUsuarioTemporario.set(2, Estaticos.TEXTO);
+        txfQuestao2.setText(EstaticosNovo.respostasUsuarioTemporario.get(2));
     }//GEN-LAST:event_txfQuestao2MouseClicked
 
     private void txfQuestao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfQuestao1ActionPerformed
@@ -846,10 +816,10 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_txfQuestao1ActionPerformed
 
     private void txfQuestao1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfQuestao1MouseClicked
-        Estaticos.TEXTO = txfQuestao1.getText();
         frmTecladoSimNao teclaSN = new frmTecladoSimNao(null, true);
         teclaSN.setVisible(true);
-        txfQuestao1.setText(Estaticos.TEXTO);
+        EstaticosNovo.respostasUsuarioTemporario.set(1, Estaticos.TEXTO);
+        txfQuestao1.setText(EstaticosNovo.respostasUsuarioTemporario.get(1));
     }//GEN-LAST:event_txfQuestao1MouseClicked
 
     private void btnProximo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProximo1ActionPerformed
@@ -863,10 +833,11 @@ public class frmPrincipal extends javax.swing.JDialog
 
     private void txfNomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txfNomeMouseClicked
 
-        Estaticos.TEXTO = txfNome.getText();
-        frmTeclado tecla = new frmTeclado(null, true);
-        tecla.setVisible(true);
-        txfNome.setText(Estaticos.TEXTO);
+        frmTeclado teclado = new frmTeclado(null, true);
+        teclado.setVisible(true);
+        EstaticosNovo.respostasUsuarioTemporario.set(0, Estaticos.TEXTO);
+        var respostaNome = EstaticosNovo.respostasUsuarioTemporario.get(0);
+        txfNome.setText(respostaNome);
     }//GEN-LAST:event_txfNomeMouseClicked
 
     private void btnAnterior4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnterior4ActionPerformed
@@ -874,71 +845,83 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnAnterior4ActionPerformed
 
     private void btn5cActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5cActionPerformed
-        Estaticos.Questão5 = "a";
+
         resQuestão4 = Estaticos.Questão4;
-        btn4a.setBackground(Color.GREEN);
+        btn4a.setBackground(Color.GRAY);
         btn4b.setBackground(Color.WHITE);
         btn4c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn5cActionPerformed
 
     private void btn5cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5cMouseClicked
-
+        EstaticosNovo.respostasUsuarioTemporario.set(5, "c");
+        resQuestão5 = EstaticosNovo.respostasUsuarioTemporario.get(5);
+        btn5c.setBackground(Color.GRAY);
+        btn5a.setBackground(Color.WHITE);
+        btn5b.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn5cMouseClicked
 
     private void btn5bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5bActionPerformed
-        Estaticos.Questão4 = "a";
-        resQuestão4 = Estaticos.Questão4;
-        btn4a.setBackground(Color.GREEN);
-        btn4b.setBackground(Color.WHITE);
-        btn4c.setBackground(Color.WHITE);
 
     }//GEN-LAST:event_btn5bActionPerformed
 
     private void btn5bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5bMouseClicked
-
+        EstaticosNovo.respostasUsuarioTemporario.set(5, "b");
+        resQuestão5 = EstaticosNovo.respostasUsuarioTemporario.get(5);
+        btn5b.setBackground(Color.GRAY);
+        btn5a.setBackground(Color.WHITE);
+        btn5c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn5bMouseClicked
 
     private void btn5aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5aActionPerformed
-        Estaticos.Questão4 = "a";
-        resQuestão4 = Estaticos.Questão4;
-        btn4a.setBackground(Color.GREEN);
-        btn4b.setBackground(Color.WHITE);
-        btn4c.setBackground(Color.WHITE);
 
     }//GEN-LAST:event_btn5aActionPerformed
 
     private void btn5aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn5aMouseClicked
-
+        EstaticosNovo.respostasUsuarioTemporario.set(5, "a");
+        resQuestão5 = EstaticosNovo.respostasUsuarioTemporario.get(5);
+        btn5a.setBackground(Color.GRAY);
+        btn5b.setBackground(Color.WHITE);
+        btn5c.setBackground(Color.WHITE);
     }//GEN-LAST:event_btn5aMouseClicked
 
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
 
         Estaticos.MENSAGEM = "";
 
-        resQuestão3 = Estaticos.Questão3;
-        resQuestão4 = Estaticos.Questão4;
-        resQuestão5 = Estaticos.Questão5;
+        var nome = EstaticosNovo.respostasUsuarioTemporario.get(0);
+        var questao1 = EstaticosNovo.respostasUsuarioTemporario.get(1);
+        var questao2 = EstaticosNovo.respostasUsuarioTemporario.get(2);
+        var questao3 = EstaticosNovo.respostasUsuarioTemporario.get(3);
+        var questao4 = EstaticosNovo.respostasUsuarioTemporario.get(4);
+        var questao5 = EstaticosNovo.respostasUsuarioTemporario.get(5);
 
-        Controle controle = new Controle(txfNome.getText(), txfQuestao1.getText().toUpperCase(),
-                txfQuestao2.getText().toUpperCase(), resQuestão3, resQuestão4, resQuestão5);
+        var usuario = new UsuariosNovo();
+
+        var respostas = new ArrayList<String>();
+        usuario.setNome(nome);
+        respostas.add(questao1);
+        respostas.add(questao2);
+        respostas.add(questao3);
+        respostas.add(questao4);
+        respostas.add(questao5);
+        usuario.setRespostas(respostas);
+
+        var controle = new ControleNovo();
+
+        controle.CadastrarResposta(usuario);
+        controle.VerificarPontos(usuario);
 
         if (Estaticos.MENSAGEM.equals(""))
         {
-            String pontos = "";
-            for (ArrayList<String> Visitante : Estaticos.DadosPessoas)
-            {
-                AnalisaDados analisadados = new AnalisaDados(null, null, null, null, null, null);
-                pontos = Visitante.get(6);
-                lblNomeVis.setText(Visitante.get(0));
-                lblQ1Vis.setText(Visitante.get(1));
-                lblQ2Vis.setText(Visitante.get(2));
-                lblQ3Vis.setText(Visitante.get(3));
-                lblQ4Vis.setText(Visitante.get(4));
-                lblQ5Vis.setText(Visitante.get(5));
 
-            }
-
-            Integer IntPontos = Integer.valueOf(pontos);
+            Integer IntPontos = EstaticosNovo.DatabaseUsuarios.get(0).getPontos();
+            lblPontos.setText(String.valueOf(IntPontos));
+            lblResNome.setText(usuario.getNome());
+            lblResQ1.setText(usuario.getRespostas().get(0));
+            lblResQ2.setText(usuario.getRespostas().get(1));
+            lblResQ3.setText(usuario.getRespostas().get(2));
+            lblResQ4.setText(usuario.getRespostas().get(3));
+            lblResQ5.setText(usuario.getRespostas().get(4));
             if (IntPontos >= 3)
             {
                 lblParabens.setText("Parabens ");
@@ -954,6 +937,19 @@ public class frmPrincipal extends javax.swing.JDialog
 
             tbpPrincipal.setSelectedIndex(5);
 
+            txfNome.setText("     ");
+            txfQuestao1.setText("      ");
+            txfQuestao2.setText("      ");
+
+            btn3a.setBackground(Color.WHITE);
+            btn3b.setBackground(Color.WHITE);
+            btn3c.setBackground(Color.WHITE);
+            btn4a.setBackground(Color.WHITE);
+            btn4b.setBackground(Color.WHITE);
+            btn4c.setBackground(Color.WHITE);
+            btn5a.setBackground(Color.WHITE);
+            btn5b.setBackground(Color.WHITE);
+            btn4c.setBackground(Color.WHITE);
         } else
         {
             JOptionPane.showMessageDialog(null, Estaticos.MENSAGEM);
@@ -966,16 +962,15 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btnAnterior3ActionPerformed
 
     private void btn4aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4aActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_btn4aActionPerformed
 
     private void btn4aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4aMouseClicked
-        Estaticos.Questão4 = "a";
-        resQuestão4 = Estaticos.Questão4;
-        btn4a.setBackground(Color.GREEN);
+        EstaticosNovo.respostasUsuarioTemporario.set(4, "a");
+        resQuestão4 = EstaticosNovo.respostasUsuarioTemporario.get(4);
+        btn4a.setBackground(Color.GRAY);
         btn4b.setBackground(Color.WHITE);
         btn4c.setBackground(Color.WHITE);
-
     }//GEN-LAST:event_btn4aMouseClicked
 
     private void btn4bActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4bActionPerformed
@@ -983,9 +978,9 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn4bActionPerformed
 
     private void btn4bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4bMouseClicked
-        Estaticos.Questão4 = "b";
-        resQuestão4 = Estaticos.Questão4;
-        btn4b.setBackground(Color.GREEN);
+        EstaticosNovo.respostasUsuarioTemporario.set(4, "b");
+        resQuestão4 = EstaticosNovo.respostasUsuarioTemporario.get(4);
+        btn4b.setBackground(Color.GRAY);
         btn4a.setBackground(Color.WHITE);
         btn4c.setBackground(Color.WHITE);
 
@@ -996,9 +991,9 @@ public class frmPrincipal extends javax.swing.JDialog
     }//GEN-LAST:event_btn4cActionPerformed
 
     private void btn4cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn4cMouseClicked
-        Estaticos.Questão4 = "c";
-        resQuestão4 = Estaticos.Questão4;
-        btn4c.setBackground(Color.GREEN);
+        EstaticosNovo.respostasUsuarioTemporario.set(4, "c");
+        resQuestão4 = EstaticosNovo.respostasUsuarioTemporario.get(4);
+        btn4c.setBackground(Color.GRAY);
         btn4a.setBackground(Color.WHITE);
         btn4b.setBackground(Color.WHITE);
 

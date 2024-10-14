@@ -10,12 +10,14 @@ import Modelos.Estaticos;
  *
  * @author isaco
  */
-public class frmTeclado extends javax.swing.JDialog {
+public class frmTeclado extends javax.swing.JDialog
+{
 
     /**
      * Creates new form Teclado
      */
-    public frmTeclado(java.awt.Frame parent, boolean modal) {
+    public frmTeclado(java.awt.Frame parent, boolean modal)
+    {
         super(parent, modal);
         initComponents();
     }
@@ -309,103 +311,103 @@ public class frmTeclado extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "R");
+        txfTeclado.setText(txfTeclado.getText() + "R");
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "Y");
+        txfTeclado.setText(txfTeclado.getText() + "Y");
     }//GEN-LAST:event_btnYActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "F");
+        txfTeclado.setText(txfTeclado.getText() + "F");
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "Q");
+        txfTeclado.setText(txfTeclado.getText() + "Q");
     }//GEN-LAST:event_btnQActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "E");
+        txfTeclado.setText(txfTeclado.getText() + "E");
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "D");
+        txfTeclado.setText(txfTeclado.getText() + "D");
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "Z");
+        txfTeclado.setText(txfTeclado.getText() + "Z");
     }//GEN-LAST:event_btnZActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "X");
+        txfTeclado.setText(txfTeclado.getText() + "X");
     }//GEN-LAST:event_btnXActionPerformed
 
     private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "W");
+        txfTeclado.setText(txfTeclado.getText() + "W");
     }//GEN-LAST:event_btnWActionPerformed
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "A");
+        txfTeclado.setText(txfTeclado.getText() + "A");
     }//GEN-LAST:event_btnAActionPerformed
 
     private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "S");
+        txfTeclado.setText(txfTeclado.getText() + "S");
     }//GEN-LAST:event_btnSActionPerformed
 
     private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "T");
+        txfTeclado.setText(txfTeclado.getText() + "T");
     }//GEN-LAST:event_btnTActionPerformed
 
     private void brnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnGActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "G");
+        txfTeclado.setText(txfTeclado.getText() + "G");
     }//GEN-LAST:event_brnGActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "V");
+        txfTeclado.setText(txfTeclado.getText() + "V");
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "B");
+        txfTeclado.setText(txfTeclado.getText() + "B");
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "H");
+        txfTeclado.setText(txfTeclado.getText() + "H");
     }//GEN-LAST:event_btnHActionPerformed
 
     private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "N");
+        txfTeclado.setText(txfTeclado.getText() + "N");
     }//GEN-LAST:event_btnNActionPerformed
 
     private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "U");
+        txfTeclado.setText(txfTeclado.getText() + "U");
     }//GEN-LAST:event_btnUActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "J");
+        txfTeclado.setText(txfTeclado.getText() + "J");
     }//GEN-LAST:event_btnJActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "M");
+        txfTeclado.setText(txfTeclado.getText() + "M");
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "I");
+        txfTeclado.setText(txfTeclado.getText() + "I");
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "K");
+        txfTeclado.setText(txfTeclado.getText() + "K");
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "O");
+        txfTeclado.setText(txfTeclado.getText() + "O");
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "L");
+        txfTeclado.setText(txfTeclado.getText() + "L");
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "P");
+        txfTeclado.setText(txfTeclado.getText() + "P");
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
@@ -413,16 +415,16 @@ public class frmTeclado extends javax.swing.JDialog {
     }//GEN-LAST:event_btnLimparActionPerformed
 
     private void btnEspacoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEspacoActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ " ");
+        txfTeclado.setText(txfTeclado.getText() + " ");
     }//GEN-LAST:event_btnEspacoActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
-        txfTeclado.setText(txfTeclado.getText()+ "C");
+        txfTeclado.setText(txfTeclado.getText() + "C");
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnterActionPerformed
-        Estaticos.TEXTO = txfTeclado.getText();
         this.dispose();
+        Estaticos.TEXTO = txfTeclado.getText();
     }//GEN-LAST:event_btnEnterActionPerformed
 
     private void txfTecladoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txfTecladoActionPerformed
@@ -432,38 +434,50 @@ public class frmTeclado extends javax.swing.JDialog {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+        try
+        {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
+            {
+                if ("Nimbus".equals(info.getName()))
+                {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
+        } catch (ClassNotFoundException ex)
+        {
             java.util.logging.Logger.getLogger(frmTeclado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
+        } catch (InstantiationException ex)
+        {
             java.util.logging.Logger.getLogger(frmTeclado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
+        } catch (IllegalAccessException ex)
+        {
             java.util.logging.Logger.getLogger(frmTeclado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (javax.swing.UnsupportedLookAndFeelException ex)
+        {
             java.util.logging.Logger.getLogger(frmTeclado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
                 frmTeclado dialog = new frmTeclado(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                dialog.addWindowListener(new java.awt.event.WindowAdapter()
+                {
                     @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
+                    public void windowClosing(java.awt.event.WindowEvent e)
+                    {
                         System.exit(0);
                     }
                 });

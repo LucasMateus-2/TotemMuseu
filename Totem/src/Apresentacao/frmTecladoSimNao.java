@@ -5,18 +5,21 @@
 package Apresentacao;
 
 import Modelos.Estaticos;
+import Modelos.EstaticosNovo;
 import java.awt.Color;
 
 /**
  *
  * @author isaco
  */
-public class frmTecladoSimNao extends javax.swing.JDialog {
+public class frmTecladoSimNao extends javax.swing.JDialog
+{
 
     /**
      * Creates new form TecladoSimNao
      */
-    public frmTecladoSimNao(java.awt.Frame parent, boolean modal) {
+    public frmTecladoSimNao(java.awt.Frame parent, boolean modal)
+    {
         super(parent, modal);
         initComponents();
     }
@@ -89,63 +92,77 @@ public class frmTecladoSimNao extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimActionPerformed
+        this.dispose();
         Estaticos.TEXTO = "SIM";
         btnSim.setBackground(Color.GRAY);
         btnNao.setBackground(Color.WHITE);
     }//GEN-LAST:event_btnSimActionPerformed
-            
+
     private void btnNaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNaoActionPerformed
-        Estaticos.TEXTO = "NÃO";
+        this.dispose();
+        Estaticos.TEXTO = "NAO";
         btnNao.setBackground(Color.GRAY);
         btnSim.setBackground(Color.WHITE);
+
     }//GEN-LAST:event_btnNaoActionPerformed
 
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
-         if (Estaticos.TEXTO.equals("SIM"))
-         {
-              this.dispose();
-         }
-         else if (Estaticos.TEXTO.equals("NÃO"))
-         {
-              this.dispose();
-         }
+        if (Estaticos.TEXTO.equals("SIM"))
+        {
+
+        } else if (Estaticos.TEXTO.equals("NÃO"))
+        {
+            this.dispose();
+        }
     }//GEN-LAST:event_btnEnviarActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+        try
+        {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
+            {
+                if ("Nimbus".equals(info.getName()))
+                {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
+        } catch (ClassNotFoundException ex)
+        {
             java.util.logging.Logger.getLogger(frmTecladoSimNao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
+        } catch (InstantiationException ex)
+        {
             java.util.logging.Logger.getLogger(frmTecladoSimNao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
+        } catch (IllegalAccessException ex)
+        {
             java.util.logging.Logger.getLogger(frmTecladoSimNao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (javax.swing.UnsupportedLookAndFeelException ex)
+        {
             java.util.logging.Logger.getLogger(frmTecladoSimNao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
                 frmTecladoSimNao dialog = new frmTecladoSimNao(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                dialog.addWindowListener(new java.awt.event.WindowAdapter()
+                {
                     @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
+                    public void windowClosing(java.awt.event.WindowEvent e)
+                    {
                         System.exit(0);
                     }
                 });
